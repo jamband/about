@@ -1,0 +1,10 @@
+{
+  "[html][json][jsonc][javascript][typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.formatOnSave": true,
+  "stylelint.validate": ["css", "html"]
+}

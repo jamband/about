@@ -1,0 +1,64 @@
+.first-view {
+  background: linear-gradient(to bottom, rgb(var(--gray-800)), rgb(var(--gray-900)));
+  display: grid;
+  height: 100dvh;
+  place-items: center;
+  text-align: center;
+}
+
+.first-view .container {
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 0 1rem;
+}
+
+.first-view .title {
+  color: rgb(var(--gray-100));
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 1.75rem;
+}
+
+.first-view .description {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .first-view .description {
+    padding: 0 2rem;
+  }
+}
+
+.first-view .link {
+  align-items: center;
+  background: rgb(var(--sky-500) / 10%);
+  border: 1px solid rgb(var(--sky-500) / 20%);
+  border-radius: 9999px;
+  color: rgb(var(--sky-500));
+  display: inline-flex;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.first-view .link:active {
+  background: rgb(var(--sky-500) / 20%);
+  border: 1px solid rgb(var(--sky-500) / 30%);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .first-view .link:hover {
+    background: rgb(var(--sky-500) / 20%);
+    border: 1px solid rgb(var(--sky-500) / 30%);
+  }
+}
+
+.first-view .link .icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.first-view .link-description {
+  color: rgb(var(--sky-500) / 80%);
+  font-size: 0.85rem;
+}

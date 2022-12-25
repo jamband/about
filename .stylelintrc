@@ -1,0 +1,8 @@
+{
+  "extends": ["stylelint-config-html/html", "stylelint-config-standard"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "selector-class-pattern": null,
+    "order/properties-alphabetical-order": true
+  }
+}

@@ -1,0 +1,43 @@
+.timeline {
+  background: linear-gradient(to bottom, rgb(var(--gray-800)), rgb(var(--gray-900)));
+  padding: 6rem 0;
+}
+
+.timeline .container {
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  .timeline .container {
+    max-width: 1024px;
+  }
+}
+
+.timeline .title {
+  color: rgb(var(--gray-100));
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.timeline .section {
+  border-left: 2px solid rgb(var(--purple-400) / 60%);
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.timeline .section .date {
+  background: rgb(var(--purple-400) / 10%);
+  border: 1px solid rgb(var(--purple-400) / 20%);
+  border-radius: 0.5rem;
+  color: rgb(var(--purple-400));
+  display: inline-block;
+  font-family: monospace;
+  line-height: 1.2;
+  margin: 0.25rem 0 0.5rem;
+  padding: 0.25rem 0.75rem;
+}

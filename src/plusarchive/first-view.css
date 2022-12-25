@@ -1,0 +1,121 @@
+.first-view {
+  background: linear-gradient(to bottom, rgb(var(--gray-800)), rgb(var(--gray-900)));
+}
+
+.first-view .container {
+  display: grid;
+  height: 95dvh;
+  margin: 0 auto;
+  max-width: 1536px;
+  padding: 0 0.5rem;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .first-view .container {
+    gap: 1rem 0;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .first-view .container {
+    gap: 0 8rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 6rem;
+  }
+}
+
+.first-view .title {
+  color: rgb(var(--gray-100));
+  font-size: 2.75rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.first-view .description {
+  margin-bottom: 2rem;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .first-view .description {
+    padding: 0 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .first-view .description {
+    padding: 0;
+  }
+}
+
+.first-view .link {
+  background: rgb(var(--rose-500) / 90%);
+  border-radius: 0.5rem;
+  box-shadow: 0 14px 32px -12px rgb(var(--rose-500) / 50%);
+  color: rgb(var(--gray-100));
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .first-view .link {
+    margin-bottom: 3rem;
+  }
+}
+
+.first-view .screenshots {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.first-view .screenshots .screenshot,
+.first-view .screenshots .screenshot-sm {
+  background: rgb(var(--gray-700));
+  border: 1px solid rgb(var(--gray-400) / 20%);
+  border-radius: 0.25rem;
+  height: auto;
+  max-width: 80%;
+}
+
+@media (min-width: 768px) {
+  .first-view .screenshots .screenshot {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .first-view .screenshots .screenshot {
+    max-width: 100%;
+  }
+}
+
+.first-view .screenshots .screenshot-sm {
+  bottom: -4%;
+  left: 6%;
+  max-width: 20%;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .first-view .screenshots .screenshot-sm {
+    bottom: -3%;
+    left: 12%;
+    max-width: 18%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .first-view .screenshots .screenshot-sm {
+    bottom: -3%;
+    left: -3%;
+    max-width: 26%;
+  }
+}

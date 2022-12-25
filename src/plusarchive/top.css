@@ -98,8 +98,11 @@
 }
 
 .top .dialog .main .link {
+  align-items: center;
   box-shadow: 0 2px 0 0 rgb(var(--gray-400) / 70%);
   color: rgb(var(--gray-400));
+  column-gap: 0.25rem;
+  display: inline-flex;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -114,6 +117,7 @@
   }
 }
 
-.top .dialog .main .link .symbol {
-  margin-right: 0.25rem;
+.top .dialog .main .link .icon {
+  height: 1rem;
+  width: 1rem;
 }

@@ -71,14 +71,20 @@
   margin-bottom: 1.25rem;
 }
 
+.repositories .main .link {
+  align-items: center;
+  column-gap: 0.5rem;
+  display: inline-flex;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .repositories .main .link:hover {
     color: rgb(var(--sky-500));
   }
 }
 
-.repositories .main .link .symbol {
+.repositories .main .link .icon {
   color: rgb(var(--sky-500));
-  font-size: 1rem;
-  vertical-align: top;
+  height: 1rem;
+  width: 1rem;
 }

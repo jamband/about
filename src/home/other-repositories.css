@@ -72,16 +72,22 @@
   margin-bottom: 1.25rem;
 }
 
+.other-repositories .main .link {
+  align-items: center;
+  column-gap: 0.5rem;
+  display: inline-flex;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .other-repositories .main .link:hover {
     color: rgb(var(--sky-500));
   }
 }
 
-.other-repositories .main .name .link .symbol {
+.other-repositories .main .link .icon {
   color: rgb(var(--sky-500));
-  font-size: 1rem;
-  vertical-align: top;
+  height: 0.85rem;
+  width: 0.85rem;
 }
 
 .other-repositories .footer {

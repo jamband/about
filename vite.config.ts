@@ -7,6 +7,7 @@ import htmlMinify from "./plugins/html-minify";
 const root = resolve(__dirname, "src");
 
 export default defineConfig({
+  base: "/about/",
   root,
   publicDir: resolve(root, "public"),
   css: {

@@ -15,14 +15,14 @@
 
 @media (min-width: 768px) {
   .first-view .container {
-    gap: 1rem 0;
     padding: 0 1rem;
+    row-gap: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
   .first-view .container {
-    gap: 0 8rem;
+    column-gap: 4rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 0 6rem;
   }

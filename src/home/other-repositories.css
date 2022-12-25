@@ -52,8 +52,8 @@
 
 .other-repositories .main {
   display: grid;
-  gap: 3rem 0;
   margin-bottom: 4rem;
+  row-gap: 3rem;
 }
 
 @media (min-width: 768px) {

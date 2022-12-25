@@ -52,7 +52,7 @@
 
 .repositories .main {
   display: grid;
-  gap: 3rem 0;
+  row-gap: 3rem;
 }
 
 @media (min-width: 768px) {

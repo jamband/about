@@ -1,5 +1,5 @@
 {
-  "[html][json][jsonc][javascript][typescript]": {
+  "[html][javascript][json][jsonc][typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {

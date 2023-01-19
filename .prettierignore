@@ -1,4 +1,5 @@
 /dist
+*.css
 404.html
 head.html
-*.css
+pnpm-lock.yaml

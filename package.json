@@ -23,7 +23,7 @@
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-order": "^6.0.1",
-    "the-new-css-reset": "^1.8.2",
+    "the-new-css-reset": "^1.8.3",
     "vite": "^4.0.4"
   },
   "browserslist": [

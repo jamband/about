@@ -1,3 +1,7 @@
+---
+import IconArrowDown from "@/icons/icon-arrow-down.astro";
+---
+
 <div class="container">
   <article class="container-inner">
     <h1 class="title">About<br />me</h1>
@@ -5,20 +9,9 @@
       音楽と歩くことが好きな Web Developer
       です。ここでは、わたしが作ったものの一部を紹介しています。よろしければ、続きをお読みください
     </p>
-    <a href="#repositories" class="link" aria-label="続きを読む">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 384 512"
-        fill="currentColor"
-        class="link-icon"
-        role="img"
-        aria-hidden="true"
-      >
-        <path
-          d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
-        ></path>
-      </svg>
-    </a>
+    <a href="#repositories" class="link" aria-label="続きを読む"
+      ><IconArrowDown class="link-icon" /></a
+    >
     <p class="link-description">続きを読む</p>
   </article>
 </div>

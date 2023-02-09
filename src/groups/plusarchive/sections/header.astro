@@ -153,22 +153,18 @@ import IconXmark from "@/icons/icon-xmark.astro";
 </style>
 
 <script>
-  const topMenu = document.querySelector(".menu");
-  const topDialog = document.querySelector<HTMLDialogElement>(".dialog");
+  const menu = document.querySelector<HTMLDivElement>(".menu");
+  if (!menu) throw Error("menu element does not exists.");
 
-  if (topMenu !== null) {
-    topMenu.addEventListener("click", () => {
-      if (topDialog !== null) {
-        topDialog.showModal();
-      }
-    });
+  const dialog = document.querySelector<HTMLDialogElement>(".dialog");
+  if (!dialog) throw Error("dialog element does not exists.");
 
-    if (topDialog !== null) {
-      topDialog.addEventListener("click", (event) => {
-        if (["A", "DIALOG"].includes((event.target as HTMLElement).nodeName)) {
-          topDialog.close();
-        }
-      });
-    }
-  }
+  menu.addEventListener("click", () => {
+    dialog.showModal();
+  });
+
+  dialog.addEventListener("click", (event) => {
+    const target = event.target as HTMLElement;
+    if (["A", "DIALOG"].includes(target.nodeName)) dialog.close();
+  });
 </script>

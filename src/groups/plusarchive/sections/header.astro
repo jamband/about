@@ -1,0 +1,202 @@
+<header class="container">
+  <div class="menu">
+    <button class="menu-button" aria-label="メニュー">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+        fill="currentColor"
+        class="menu-button-icon"
+        role="img"
+        aria-hidden="true"
+      >
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+        ></path>
+      </svg>
+    </button>
+  </div>
+  <dialog class="dialog">
+    <form method="dialog" class="dialog-inner">
+      <header class="dialog-header">
+        <button class="dialog-header-close" aria-label="閉じる">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+            fill="currentColor"
+            class="dialog-header-close-icon"
+            role="img"
+            aria-hidden="true"
+          >
+            <path
+              d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+            ></path>
+          </svg>
+        </button>
+      </header>
+      <div class="dialog-main">
+        <a href="/about/" class="dialog-main-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            fill="currentColor"
+            class="dialog-main-link-icon"
+            role="img"
+            aria-hidden="true"
+          >
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            ></path>
+          </svg>
+          トップページに戻る</a
+        >
+      </div>
+    </form>
+  </dialog>
+</header>
+
+<style>
+  .container {
+    background: rgb(var(--gray-800));
+    height: 5dvh;
+    padding: 1rem;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-button {
+    align-items: center;
+    border-radius: 0.25rem;
+    color: rgb(var(--gray-100) / 70%);
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.5rem 0.75rem;
+  }
+
+  @media (min-width: 768px) {
+    .menu-button {
+      padding: 0.75rem 1rem;
+    }
+  }
+
+  .menu-button:active {
+    background: rgb(var(--gray-700));
+    color: rgb(var(--gray-100));
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .menu-button:hover {
+      background: rgb(var(--gray-700));
+      color: rgb(var(--gray-100));
+    }
+  }
+
+  .menu-button-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  .dialog {
+    background: rgb(var(--gray-800));
+    border: 1px solid rgb(var(--gray-400) / 10%);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    width: 85%;
+  }
+
+  @media (min-width: 768px) {
+    .dialog {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .dialog {
+      width: 25%;
+    }
+  }
+
+  .dialog-inner {
+    padding-bottom: 2rem;
+  }
+
+  .dialog-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.25rem;
+  }
+
+  .dialog-header-close {
+    color: rgb(var(--gray-100) / 70%);
+    cursor: pointer;
+  }
+
+  .dialog-header-close:active {
+    color: rgb(var(--gray-100));
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .dialog-header-close:hover {
+      color: rgb(var(--gray-100));
+    }
+  }
+
+  .dialog-header-close-icon {
+    height: 1.5rem;
+    vertical-align: -0.3em;
+    width: 1.5rem;
+  }
+
+  .dialog-main {
+    display: grid;
+    place-items: center;
+  }
+
+  .dialog-main-link {
+    align-items: center;
+    box-shadow: 0 2px 0 0 rgb(var(--gray-400) / 70%);
+    color: rgb(var(--gray-400));
+    column-gap: 0.25rem;
+    display: inline-flex;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  .dialog-main-link:active {
+    color: rgb(var(--gray-100));
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .dialog-main-link:hover {
+      color: rgb(var(--gray-100));
+    }
+  }
+
+  .dialog-main-link-icon {
+    height: 1rem;
+    width: 1rem;
+  }
+</style>
+
+<script>
+  const topMenu = document.querySelector(".menu");
+  const topDialog = document.querySelector<HTMLDialogElement>(".dialog");
+
+  if (topMenu !== null) {
+    topMenu.addEventListener("click", () => {
+      if (topDialog !== null) {
+        topDialog.showModal();
+      }
+    });
+
+    if (topDialog !== null) {
+      topDialog.addEventListener("click", (event) => {
+        if (["A", "DIALOG"].includes((event.target as HTMLElement).nodeName)) {
+          topDialog.close();
+        }
+      });
+    }
+  }
+</script>

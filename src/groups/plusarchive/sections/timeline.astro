@@ -1,0 +1,83 @@
+<div class="container">
+  <article class="container-inner">
+    <h2 class="title">Timeline</h2>
+    <section class="section">
+      <h3 class="date">2022-11 -</h3>
+      <ul>
+        <li>Backend を Laravel にリプレイス</li>
+        <li>Web Frontend を Next.js にリプレイス</li>
+      </ul>
+    </section>
+    <section class="section">
+      <h3 class="date">2019-12 - 2022-10</h3>
+      <ul>
+        <li>Backend を Yii Framework Web API にリプレイス</li>
+        <li>Web Frontend を Nuxt にリプレイス</li>
+      </ul>
+    </section>
+    <section class="section">
+      <h3 class="date">2016-05 - 2019-11</h3>
+      <ul>
+        <li>Yii Framework, jQuery などを使用</li>
+      </ul>
+    </section>
+    <section class="section">
+      <h3 class="date">2016-05</h3>
+      <ul>
+        <li>リリース & コードを GitHub に公開</li>
+      </ul>
+    </section>
+  </article>
+</div>
+
+<style>
+  .container {
+    background: linear-gradient(
+      to bottom,
+      rgb(var(--gray-800)),
+      rgb(var(--gray-900))
+    );
+    padding: 6rem 0;
+  }
+
+  .container-inner {
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 0 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    .container-inner {
+      max-width: 1024px;
+    }
+  }
+
+  .title {
+    color: rgb(var(--gray-100));
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  .section {
+    border-left: 2px solid rgb(var(--gray-400) / 80%);
+    margin-bottom: 0.75rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+  }
+
+  .date {
+    background: rgb(var(--gray-400) / 10%);
+    border: 1px solid rgb(var(--gray-400) / 20%);
+    border-radius: 0.5rem;
+    color: rgb(var(--gray-100));
+    display: inline-block;
+    font-family: monospace;
+    line-height: 1.2;
+    margin: 0.25rem 0 0.5rem;
+    margin-bottom: 2;
+    padding: 0.25rem 0.75rem;
+  }
+</style>

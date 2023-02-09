@@ -6,9 +6,8 @@ https://jamband.github.io/about/
 
 - Hosting: GitHub Pages
 - Deploy: GitHub Actions
-- Build: Vite
+- Language & Framework: TypeScript, Astro
 - Lint & Formatter: Stylelint, Prettier
-- Other: PostHTML
 
 ## License
 

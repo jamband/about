@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/*!
+ * Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */
+
+/* reset */
+@import url("the-new-css-reset");
+
+:focus {
+  outline: revert;
+}
+
+/* root */
+:root {
+  --gray-100: 236 239 244;
+  --gray-400: 183 180 199;
+  --gray-800: 19 17 26;
+  --gray-900: 2 0 11;
+  --sky-500: 14 165 233;
+}
+
+/* base */
+html,
+body {
+  background: linear-gradient(to bottom, rgb(var(--gray-800)), rgb(var(--gray-900)));
+  color: rgb(var(--gray-400));
+  font-family: system-ui, -apple-system, BlinkMacSystem, Meiryo, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 0 0.75rem;
+}

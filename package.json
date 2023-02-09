@@ -2,29 +2,31 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --open",
-    "build": "vite build",
-    "preview": "vite preview --open",
-    "format": "prettier --check .",
-    "stylelint": "stylelint \"src/**/*.{css,html}\"",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "checks": "tsc && astro check",
+    "format": "prettier --check --plugin-search-dir=. .",
+    "stylelint": "stylelint \"src/**/*.{astro,css}\"",
     "clear": "node scripts/clear.js",
     "clean": "node scripts/clean.js"
   },
-  "devDependencies": {
-    "@types/node": "^16.18.11",
+  "dependencies": {
+    "@types/html-minifier-terser": "^7.0.0",
+    "@types/node": "^16.18.12",
+    "astro": "^2.0.9",
     "autoprefixer": "^10.4.13",
     "html-minifier-terser": "^7.1.0",
     "postcss": "^8.4.21",
     "postcss-html": "^1.5.0",
     "posthtml": "^0.16.6",
-    "posthtml-include": "^1.7.4",
-    "prettier": "2.8.3",
+    "prettier": "2.8.4",
+    "prettier-plugin-astro": "^0.8.0",
     "stylelint": "^14.16.1",
-    "stylelint-config-html": "^1.1.0",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-order": "^6.0.1",
     "the-new-css-reset": "^1.8.3",
-    "vite": "^4.0.4"
+    "typescript": "^4.9.5"
   },
   "browserslist": [
     "defaults"

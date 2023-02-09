@@ -1,10 +1,9 @@
 {
-  "[html][javascript][json][jsonc][typescript]": {
+  "[astro][javascript][json][jsonc][typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
+  "editor.codeActionsOnSave": { "source.fixAll": true },
   "editor.formatOnSave": true,
-  "stylelint.validate": ["css", "html"]
+  "prettier.documentSelectors": ["**/*.astro"],
+  "stylelint.validate": ["astro", "css"]
 }

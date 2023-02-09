@@ -1,0 +1,18 @@
+---
+import "./base.css";
+
+import Layout from "@/layouts/layout.astro";
+import FirstView from "./sections/first-view.astro";
+import Header from "./sections/header.astro";
+import TechnologyStack from "./sections/technology-stack.astro";
+import Timeline from "./sections/timeline.astro";
+---
+
+<Layout title="blog">
+  <Header />
+  <main>
+    <FirstView />
+    <TechnologyStack />
+    <Timeline />
+  </main>
+</Layout>

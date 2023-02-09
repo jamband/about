@@ -1,1 +1,0 @@
-import"./ec808ebb.js";const t=document.querySelector(".top .menu"),e=document.querySelector(".top .dialog");t.addEventListener("click",()=>{e.showModal()});e.addEventListener("click",o=>{["A","DIALOG"].includes(o.target.nodeName)&&e.close()});

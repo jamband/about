@@ -8,7 +8,7 @@
     }
   ],
   "rules": {
-    "declaration-colon-newline-after": null,
+    "declaration-property-value-no-unknown": true,
     "order/properties-alphabetical-order": true
   }
 }

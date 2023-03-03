@@ -16,10 +16,12 @@ import IconCode from "@/icons/icon-code.astro";
 
 <style>
   .container {
-    display: grid;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     height: 100dvh;
-    place-content: center;
-    place-items: center;
+    justify-content: center;
+    padding: 0 0.25rem;
     text-align: center;
   }
 
@@ -32,6 +34,7 @@ import IconCode from "@/icons/icon-code.astro";
   }
 
   .description {
+    line-height: 1.85;
     margin-bottom: 2rem;
   }
 
@@ -48,9 +51,9 @@ import IconCode from "@/icons/icon-code.astro";
     border-radius: 0.5rem;
     box-shadow: 0 14px 32px -12px rgb(0 153 255 / 20%);
     color: rgb(var(--sky-500));
-    column-gap: 0.5rem;
     display: inline-flex;
     font-weight: bold;
+    gap: 0.5rem;
     padding: 0.5rem 1.5rem;
   }
 

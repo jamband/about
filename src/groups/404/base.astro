@@ -6,7 +6,25 @@ import FirstView from "./sections/first-view.astro";
 ---
 
 <Layout title="ページが見つかりませんでした">
-  <main>
-    <FirstView />
+  <main class="container">
+    <div class="container-inner">
+      <FirstView />
+    </div>
   </main>
 </Layout>
+
+<style>
+  .container {
+    background: linear-gradient(
+      to bottom,
+      rgb(var(--gray-800)),
+      rgb(var(--gray-900))
+    );
+  }
+
+  .container-inner {
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 0 0.75rem;
+  }
+</style>

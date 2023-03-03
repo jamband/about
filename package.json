@@ -5,7 +5,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "checks": "tsc && astro check",
+    "checks": "astro check && tsc",
     "format": "prettier --check --plugin-search-dir=. .",
     "stylelint": "stylelint \"src/**/*.{astro,css}\"",
     "clear": "node scripts/clear.js",

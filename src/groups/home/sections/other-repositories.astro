@@ -102,18 +102,18 @@ import IconUpRightFromSquare from "@/icons/icon-up-right-from-square.astro";
       rgb(var(--gray-800)),
       rgb(var(--gray-900))
     );
-    padding: 6rem 0;
   }
 
   .container-inner {
     margin: 0 auto;
     max-width: 1024px;
-    padding: 0 1rem;
+    padding: 6rem 1rem;
   }
 
   .header {
     display: flex;
     flex-direction: column;
+    gap: 2.5rem;
     text-align: center;
   }
 
@@ -122,11 +122,10 @@ import IconUpRightFromSquare from "@/icons/icon-up-right-from-square.astro";
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 2rem;
   }
 
   .header-description {
-    margin-bottom: 3rem;
+    line-height: 1.85;
   }
 
   @media (min-width: 764px) {
@@ -144,7 +143,7 @@ import IconUpRightFromSquare from "@/icons/icon-up-right-from-square.astro";
   .separator {
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-top: 3rem;
   }
 
   .separator-icon {
@@ -155,7 +154,7 @@ import IconUpRightFromSquare from "@/icons/icon-up-right-from-square.astro";
   .main {
     display: grid;
     gap: 3rem;
-    margin-bottom: 4rem;
+    margin-top: 3rem;
   }
 
   @media (min-width: 768px) {
@@ -170,8 +169,7 @@ import IconUpRightFromSquare from "@/icons/icon-up-right-from-square.astro";
     color: rgb(var(--gray-100));
     font-size: 2rem;
     font-weight: bold;
-    line-height: 1.2rem;
-    margin-bottom: 1.25rem;
+    line-height: 1.2;
   }
 
   .main-link {
@@ -192,12 +190,18 @@ import IconUpRightFromSquare from "@/icons/icon-up-right-from-square.astro";
     width: 0.85rem;
   }
 
+  .main-description {
+    line-height: 1.85;
+    margin-top: 0.5rem;
+  }
+
   .footer {
+    margin-top: 5rem;
     text-align: center;
   }
 
   .footer-description {
-    margin-bottom: 1rem;
+    line-height: 1.85;
   }
 
   .footer-link {
@@ -210,6 +214,7 @@ import IconUpRightFromSquare from "@/icons/icon-up-right-from-square.astro";
     display: inline-flex;
     font-weight: bold;
     gap: 0.4rem;
+    margin-top: 1rem;
     padding: 0.5rem 1.25rem;
   }
 

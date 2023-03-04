@@ -69,18 +69,18 @@ import IconCode from "@/icons/icon-code.astro";
       rgb(var(--gray-800)),
       rgb(var(--gray-900))
     );
-    padding: 6rem 0;
   }
 
   .container-inner {
     margin: 0 auto;
     max-width: 1024px;
-    padding: 0 1rem;
+    padding: 6rem 1rem;
   }
 
   .header {
     display: flex;
     flex-direction: column;
+    gap: 2.5rem;
     text-align: center;
   }
 
@@ -89,11 +89,10 @@ import IconCode from "@/icons/icon-code.astro";
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 2rem;
   }
 
   .header-description {
-    margin-bottom: 3rem;
+    line-height: 1.85;
   }
 
   @media (min-width: 764px) {
@@ -111,7 +110,7 @@ import IconCode from "@/icons/icon-code.astro";
   .separator {
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-top: 3rem;
   }
 
   .separator-icon {
@@ -122,6 +121,7 @@ import IconCode from "@/icons/icon-code.astro";
   .main {
     display: grid;
     gap: 3rem;
+    margin-top: 3rem;
   }
 
   @media (min-width: 768px) {
@@ -136,8 +136,7 @@ import IconCode from "@/icons/icon-code.astro";
     color: rgb(var(--gray-100));
     font-size: 2rem;
     font-weight: bold;
-    line-height: 1.2rem;
-    margin-bottom: 1.25rem;
+    line-height: 1.2;
   }
 
   .main-link {
@@ -156,5 +155,10 @@ import IconCode from "@/icons/icon-code.astro";
     color: rgb(var(--sky-500));
     height: 1rem;
     width: 1rem;
+  }
+
+  .main-description {
+    line-height: 1.85;
+    margin-top: 0.5rem;
   }
 </style>

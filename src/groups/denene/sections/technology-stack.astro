@@ -6,7 +6,10 @@ import IconGithub from "@/icons/icon-github.astro";
 <div class="container">
   <article class="container-inner">
     <section class="header">
-      <h2 class="header-title">Technology Stack</h2>
+      <h2 class="header-title">
+        Technology<br class="header-title-new-line" aria-hidden="true" />
+        Stack
+      </h2>
       <p class="header-description">
         denene
         の技術スタックを紹介します。以下のリストは現在のものであって、時間とともに変化していく可能性があります
@@ -18,17 +21,17 @@ import IconGithub from "@/icons/icon-github.astro";
     <article class="main">
       <section>
         <h3 class="main-title">Web Frontend</h3>
-        <ul class="main-tags">
-          <li class="main-tag">TypeScript</li>
-          <li class="main-tag">Astro</li>
-          <li class="main-tag">Prettier</li>
+        <ul class="main-tag-list">
+          <li class="main-tag-list-item">TypeScript</li>
+          <li class="main-tag-list-item">Astro</li>
+          <li class="main-tag-list-item">Prettier</li>
         </ul>
       </section>
       <section>
         <h3 class="main-title">Others</h3>
-        <ul class="main-tags">
-          <li class="main-tag">GitHub Actions</li>
-          <li class="main-tag">GitHub Pages</li>
+        <ul class="main-tag-list">
+          <li class="main-tag-list-item">GitHub Actions</li>
+          <li class="main-tag-list-item">GitHub Pages</li>
         </ul>
       </section>
     </article>
@@ -54,12 +57,17 @@ import IconGithub from "@/icons/icon-github.astro";
       rgb(var(--gray-800)),
       rgb(var(--gray-900))
     );
-    padding: 6rem 0;
   }
 
   .container-inner {
-    margin: 0 auto;
-    max-width: 768px;
+    padding: 6rem 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .container-inner {
+      margin: 0 auto;
+      max-width: 768px;
+    }
   }
 
   @media (min-width: 1024px) {
@@ -71,7 +79,7 @@ import IconGithub from "@/icons/icon-github.astro";
   .header {
     display: flex;
     flex-direction: column;
-    padding: 0 1.5rem;
+    gap: 2rem;
     text-align: center;
   }
 
@@ -79,12 +87,11 @@ import IconGithub from "@/icons/icon-github.astro";
     color: rgb(var(--gray-100));
     font-size: 2.5rem;
     font-weight: bold;
-    line-height: 2.75rem;
-    margin-bottom: 2rem;
+    line-height: 1.2;
   }
 
   .header-description {
-    margin-bottom: 3rem;
+    line-height: 1.85;
   }
 
   @media (min-width: 768px) {
@@ -102,7 +109,7 @@ import IconGithub from "@/icons/icon-github.astro";
   .separator {
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 
   .separator-icon {
@@ -112,16 +119,14 @@ import IconGithub from "@/icons/icon-github.astro";
 
   .main {
     display: grid;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    padding: 0 1.5rem;
+    gap: 4rem;
+    margin-top: 3rem;
   }
 
   @media (min-width: 768px) {
     .main {
       gap: 4rem 3rem;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      margin-bottom: 4rem;
     }
   }
 
@@ -129,24 +134,17 @@ import IconGithub from "@/icons/icon-github.astro";
     color: rgb(var(--gray-100));
     font-size: 2rem;
     font-weight: bold;
-    line-height: 1.2rem;
-    margin-bottom: 1.25rem;
+    line-height: 1.2;
   }
 
-  .main-tags {
+  .main-tag-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 2rem;
+    gap: 1rem 0.75rem;
+    margin-top: 1rem;
   }
 
-  @media (min-width: 768px) {
-    .main-tags {
-      margin-bottom: 0;
-    }
-  }
-
-  .main-tag {
+  .main-tag-list-item {
     background: rgb(var(--gray-400) / 10%);
     border: 1px solid rgb(var(--gray-400) / 20%);
     border-radius: 0.125rem;
@@ -160,24 +158,18 @@ import IconGithub from "@/icons/icon-github.astro";
     align-items: center;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     justify-content: center;
-    margin: 0 auto;
+    margin: 5rem auto 0;
     max-width: 768px;
     text-align: center;
   }
 
   .footer-description {
-    margin-bottom: 2rem;
-    padding: 0 1rem;
+    line-height: 1.85;
   }
 
   @media (min-width: 768px) {
-    .footer-description {
-      padding: 0 4rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
     .footer-description {
       padding: 0 4rem;
     }

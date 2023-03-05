@@ -5,19 +5,19 @@ import imageFirstViewScreenshot from "../assets/first-view-screenshot.webp";
 
 <div class="container">
   <article class="container-inner">
-    <section>
-      <h1 class="title">denene</h1>
-      <p class="description">
+    <section class="main">
+      <h1 class="main-title">denene</h1>
+      <p class="main-description">
         「控えめな Web」を探究し、標準と新しいさを見つける
       </p>
       <a
         href="https://jamband.github.io/denene/"
-        class="link"
+        class="main-link"
         target="_blank"
         rel="noreferrer">go to denene</a
       >
     </section>
-    <div class="screenshots">
+    <div class="screenshot-container">
       <img
         src={imageFirstViewScreenshotSm}
         width="379"
@@ -46,57 +46,49 @@ import imageFirstViewScreenshot from "../assets/first-view-screenshot.webp";
   }
 
   .container-inner {
-    display: grid;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     height: 95dvh;
-    margin: 0 auto;
-    max-width: 1536px;
-    padding: 0 0.5rem;
-    place-content: center;
-    place-items: center;
-    text-align: center;
-  }
-
-  @media (min-width: 768px) {
-    .container-inner {
-      gap: 1rem;
-      padding: 0 1rem;
-    }
+    justify-content: center;
+    padding: 3rem 1rem;
   }
 
   @media (min-width: 1024px) {
     .container-inner {
-      gap: 4rem;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      padding: 0 6rem;
+      flex-direction: row;
+      margin: 0 auto;
+      max-width: 1536px;
     }
   }
 
-  .title {
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    .main {
+      flex: 1;
+    }
+  }
+
+  .main-title {
     color: rgb(var(--gray-100));
     font-size: 2.75rem;
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 1rem;
   }
 
-  .description {
-    margin-bottom: 2rem;
-    padding: 0 0.5rem;
+  .main-description {
+    line-height: 1.85;
   }
 
-  @media (min-width: 768px) {
-    .description {
-      padding: 0 6rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .description {
-      padding: 0;
-    }
-  }
-
-  .link {
+  .main-link {
+    align-self: center;
     background: rgb(var(--gray-400) / 10%);
     border: 2px solid rgb(var(--gray-400) / 80%);
     border-radius: 0.125rem;
@@ -104,8 +96,7 @@ import imageFirstViewScreenshot from "../assets/first-view-screenshot.webp";
     color: rgb(var(--gray-100));
     display: inline-block;
     font-weight: bold;
-    margin-bottom: 3rem;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.25rem;
   }
 
   .link:active {
@@ -118,53 +109,37 @@ import imageFirstViewScreenshot from "../assets/first-view-screenshot.webp";
     }
   }
 
-  .screenshots {
+  .screenshot-container {
     display: flex;
     justify-content: center;
+    margin: 0 3rem;
     position: relative;
   }
 
-  .screenshot,
-  .screenshot-sm {
+  @media (min-width: 768px) {
+    .screenshot-container {
+      margin: 0 12rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .screenshot-container {
+      flex: 1;
+      margin: 0 5rem;
+    }
+  }
+
+  .screenshot-sm,
+  .screenshot {
     background: rgb(var(--gray-800));
     border: 1px solid rgb(var(--gray-400) / 20%);
     border-radius: 0.25rem;
-    height: auto;
-    max-width: 64%;
-  }
-
-  @media (min-width: 768px) {
-    .screenshot {
-      max-width: 50%;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .screenshot {
-      max-width: 100%;
-    }
   }
 
   .screenshot-sm {
-    bottom: -4%;
-    left: 15%;
-    max-width: 22%;
+    bottom: -5%;
+    left: -5%;
     position: absolute;
-  }
-
-  @media (min-width: 768px) {
-    .screenshot-sm {
-      bottom: -3%;
-      left: 23%;
-      max-width: 15%;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .screenshot-sm {
-      bottom: -3%;
-      left: -3%;
-      max-width: 28%;
-    }
+    width: 25%;
   }
 </style>

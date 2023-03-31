@@ -397,20 +397,20 @@ packages:
       postcss-selector-parser: 6.0.11
     dev: false
 
-  /@emmetio/abbreviation@2.3.0:
-    resolution: {integrity: sha512-QeoUgJpvMRzS2poaA1U2qfAIN9jFoAI9/teWi/KBnBLLxo24HbpIKOsX5h9sEaTaay9YGn5bb/NL6u4OOy2huw==}
+  /@emmetio/abbreviation@2.3.1:
+    resolution: {integrity: sha512-QXgYlXZGprqb6aCBJPPWVBN/Jb69khJF73GGJkOk//PoMgSbPGuaHn1hCRolctnzlBHjCIC6Om97Pw46/1A23g==}
     dependencies:
-      '@emmetio/scanner': 1.0.1
+      '@emmetio/scanner': 1.0.2
     dev: false
 
-  /@emmetio/css-abbreviation@2.1.5:
-    resolution: {integrity: sha512-13xPmr63yP/JBQgZrxUtrhhQZF3849pghgm0CyEDsCEtoXTsYWRWooI6opijgx2tDTdP0jflDdzxnQUh3GODOg==}
+  /@emmetio/css-abbreviation@2.1.6:
+    resolution: {integrity: sha512-bvuPogt0OvwcILRg+ZD/oej1H72xwOhUDPWOmhCWLJrZZ8bMTazsWnvw8a8noaaVqUhOE9PsC0tYgGVv5N7fsw==}
     dependencies:
-      '@emmetio/scanner': 1.0.1
+      '@emmetio/scanner': 1.0.2
     dev: false
 
-  /@emmetio/scanner@1.0.1:
-    resolution: {integrity: sha512-rphFhTv5N7mFUBigMDMQujdO0sEyEs1FNdv0zhO4nDAN9ScKbi7NVkrAEiZ7kvcLoJtx2G6mqBh4sZh2/W7cug==}
+  /@emmetio/scanner@1.0.2:
+    resolution: {integrity: sha512-1ESCGgXRgn1r29hRmz8K0G4Ywr5jDWezMgRnICComBCWmg3znLWU8+tmakuM1og1Vn4W/sauvlABl/oq2pve8w==}
     dev: false
 
   /@esbuild/android-arm64@0.17.14:
@@ -793,7 +793,7 @@ packages:
   /@vscode/emmet-helper@2.8.6:
     resolution: {integrity: sha512-IIB8jbiKy37zN8bAIHx59YmnIelY78CGHtThnibD/d3tQOKRY83bYVi9blwmZVUZh6l9nfkYH3tvReaiNxY9EQ==}
     dependencies:
-      emmet: 2.4.0
+      emmet: 2.4.1
       jsonc-parser: 2.3.1
       vscode-languageserver-textdocument: 1.0.8
       vscode-languageserver-types: 3.17.3
@@ -1400,11 +1400,11 @@ packages:
     resolution: {integrity: sha512-LNi3+/9nV0vT6Bz1OsSoZ/w7IgNuWdefZ7mjKNjZxyRlI/ag6uMXxsxAy5Etvuixq3Q26exw2fc4bNYvYQqXSw==}
     dev: false
 
-  /emmet@2.4.0:
-    resolution: {integrity: sha512-kJzI3hzl3B6Vh9hdLngf0k6Pa33q4QKXQJtxO2B9g2Rv+JHua0nDu/5BRUCr65XAxP3tXO/NfQZVKOSx4UtjZg==}
+  /emmet@2.4.1:
+    resolution: {integrity: sha512-8rZn/3b0WRT21UeGjQ+bzUqg3up6xBKqRjeWRZA1mrzHokNf4brqPx88XQ53+s9lK2p/pWI2VlTIu1S59OwDtA==}
     dependencies:
-      '@emmetio/abbreviation': 2.3.0
-      '@emmetio/css-abbreviation': 2.1.5
+      '@emmetio/abbreviation': 2.3.1
+      '@emmetio/css-abbreviation': 2.1.6
     dev: false
 
   /emoji-regex@8.0.0:

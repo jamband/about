@@ -5,11 +5,11 @@ dependencies:
     specifier: ^7.0.0
     version: 7.0.0
   '@types/node':
-    specifier: ^16.18.28
-    version: 16.18.28
+    specifier: ^18.16.7
+    version: 18.16.7
   astro:
     specifier: ^2.4.4
-    version: 2.4.4(@types/node@16.18.28)
+    version: 2.4.4(@types/node@18.16.7)
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.23)
@@ -86,7 +86,7 @@ packages:
       astro: ^2.4.0
     dependencies:
       '@astrojs/prism': 2.1.1
-      astro: 2.4.4(@types/node@16.18.28)
+      astro: 2.4.4(@types/node@18.16.7)
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.2
       rehype-raw: 6.1.1
@@ -758,8 +758,8 @@ packages:
       '@types/unist': 2.0.6
     dev: false
 
-  /@types/node@16.18.28:
-    resolution: {integrity: sha512-SNMfiPqsiPoYfmyi+2qnDO4nZyMIOCab/CW+Slcml0lhIzkOizYzWtt/A7tgB3TSitd+YJKi8fSC2Cpm/VCp7A==}
+  /@types/node@18.16.7:
+    resolution: {integrity: sha512-MFg7ua/bRtnA1hYE3pVyWxGd/r7aMqjNOdHvlSsXV3n8iaeGKkOaPzpJh6/ovf4bEXWcojkeMJpTsq3mzXW4IQ==}
     dev: false
 
   /@types/normalize-package-data@2.4.1:
@@ -887,7 +887,7 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /astro@2.4.4(@types/node@16.18.28):
+  /astro@2.4.4(@types/node@18.16.7):
     resolution: {integrity: sha512-2DFxcnZySS/OzBbiuWpoVGJBikcHfbwO5xmk5ohItswoMs+PfZ5P/B6mXplTjaosjm3M43c0OIsd8Mq6UksQZQ==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
@@ -946,7 +946,7 @@ packages:
       typescript: 5.0.4
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.3.5(@types/node@16.18.28)
+      vite: 4.3.5(@types/node@18.16.7)
       vitefu: 0.2.4(vite@4.3.5)
       yargs-parser: 21.1.1
       zod: 3.21.4
@@ -3916,7 +3916,7 @@ packages:
       vfile-message: 3.1.4
     dev: false
 
-  /vite@4.3.5(@types/node@16.18.28):
+  /vite@4.3.5(@types/node@18.16.7):
     resolution: {integrity: sha512-0gEnL9wiRFxgz40o/i/eTBwm+NEbpUeTWhzKrZDSdKm6nplj+z4lKz8ANDgildxHm47Vg8EUia0aicKbawUVVA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -3941,7 +3941,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 16.18.28
+      '@types/node': 18.16.7
       esbuild: 0.17.18
       postcss: 8.4.23
       rollup: 3.21.6
@@ -3957,7 +3957,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.3.5(@types/node@16.18.28)
+      vite: 4.3.5(@types/node@18.16.7)
     dev: false
 
   /vscode-css-languageservice@6.2.5:

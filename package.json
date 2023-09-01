@@ -6,7 +6,7 @@
     "build": "astro build",
     "preview": "astro preview --open",
     "typecheck": "astro check && tsc",
-    "format": "prettier --check .",
+    "format": "prettier --check --plugin prettier-plugin-astro .",
     "stylelint": "stylelint \"src/**/*.{astro,css}\"",
     "clear": "node scripts/clear.js",
     "clean": "node scripts/clean.js"

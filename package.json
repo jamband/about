@@ -2,9 +2,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --open",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "astro preview --open",
     "typecheck": "astro check && tsc",
     "format": "prettier --check .",
     "stylelint": "stylelint \"src/**/*.{astro,css}\"",
@@ -12,19 +12,20 @@
     "clean": "node scripts/clean.js"
   },
   "dependencies": {
-    "@types/node": "18.17.2",
-    "astro": "2.10.1",
-    "autoprefixer": "10.4.14",
-    "postcss": "8.4.27",
+    "@astrojs/check": "0.2.0",
+    "@types/node": "18.17.12",
+    "astro": "3.0.5",
+    "autoprefixer": "10.4.15",
+    "postcss": "8.4.29",
     "postcss-html": "1.5.0",
     "postcss-media-minmax": "5.0.0",
-    "prettier": "3.0.1",
-    "prettier-plugin-astro": "0.11.0",
-    "stylelint": "15.10.2",
+    "prettier": "3.0.3",
+    "prettier-plugin-astro": "0.12.0",
+    "stylelint": "15.10.3",
     "stylelint-config-standard": "34.0.0",
     "stylelint-order": "6.0.3",
     "the-new-css-reset": "1.9.0",
-    "typescript": "5.1.6"
+    "typescript": "5.2.2"
   },
   "browserslist": [
     "defaults"

@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import imageFirstViewScreenshotSm from "../assets/first-view-screenshot-sm.webp";
 import imageFirstViewScreenshot from "../assets/first-view-screenshot.webp";
 ---
@@ -18,14 +19,14 @@ import imageFirstViewScreenshot from "../assets/first-view-screenshot.webp";
       >
     </section>
     <div class="screenshot-container">
-      <img
+      <Image
         src={imageFirstViewScreenshotSm}
         width="379"
         height="674"
         class="screenshot-sm"
         alt="screenshot for mobile phone"
       />
-      <img
+      <Image
         src={imageFirstViewScreenshot}
         width="1373"
         height="1069"

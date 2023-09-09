@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@astrojs/check": "0.2.0",
-    "@types/node": "18.17.14",
-    "astro": "3.0.7",
+    "@types/node": "18.17.15",
+    "astro": "3.0.12",
     "autoprefixer": "10.4.15",
     "postcss": "8.4.29",
     "postcss-html": "1.5.0",

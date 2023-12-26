@@ -12,18 +12,18 @@
     "clean": "node scripts/clean.js"
   },
   "dependencies": {
-    "@astrojs/check": "0.3.1",
+    "@astrojs/check": "0.3.4",
     "@types/node": "18.19.3",
-    "astro": "4.0.4",
+    "astro": "4.0.7",
     "autoprefixer": "10.4.16",
     "postcss": "8.4.32",
     "postcss-html": "1.5.0",
     "postcss-media-minmax": "5.0.0",
     "prettier": "3.1.1",
     "prettier-plugin-astro": "0.12.2",
-    "sharp": "0.33.0",
-    "stylelint": "16.0.1",
-    "stylelint-config-standard": "35.0.0",
+    "sharp": "0.33.1",
+    "stylelint": "16.1.0",
+    "stylelint-config-standard": "36.0.0",
     "stylelint-order": "6.0.4",
     "the-new-css-reset": "1.11.2",
     "typescript": "5.3.3"

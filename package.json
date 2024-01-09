@@ -12,11 +12,11 @@
     "clean": "node scripts/clean.js"
   },
   "dependencies": {
-    "@astrojs/check": "0.3.4",
-    "@types/node": "18.19.4",
-    "astro": "4.0.8",
+    "@astrojs/check": "0.4.1",
+    "@types/node": "18.19.5",
+    "astro": "4.1.1",
     "autoprefixer": "10.4.16",
-    "postcss": "8.4.32",
+    "postcss": "8.4.33",
     "postcss-html": "1.5.0",
     "postcss-media-minmax": "5.0.0",
     "prettier": "3.1.1",

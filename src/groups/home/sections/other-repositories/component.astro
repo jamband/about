@@ -1,0 +1,98 @@
+---
+import IconCode from "@/icons/icon-code.astro";
+import IconGithub from "@/icons/icon-github.astro";
+import IconUpRightFromSquare from "@/icons/icon-up-right-from-square.astro";
+import styles from "./styles.module.css";
+---
+
+<div class={styles.container}>
+  <article class={styles.containerInner}>
+    <header class={styles.header}>
+      <h2 class={styles.headerTitle}>Other Repositories</h2>
+      <p class={styles.headerDescription}>
+        ユーティリティ系のツールやデモアプリケーションなどが含まれています。技術的な詳細については以下の外部リンクから見ることができます
+      </p>
+    </header>
+    <div class={styles.separator} role="separator">
+      <IconCode class={styles.separatorIcon} />
+    </div>
+    <article class={styles.main}>
+      <section>
+        <h3 class={styles.mainName}>
+          <a
+            href="https://github.com/jamband/ripple"
+            class={styles.mainLink}
+            target="_blank"
+            rel="noreferrer"
+            >ripple <IconUpRightFromSquare class={styles.mainLinkIcon} /></a
+          >
+        </h3>
+        <p class={styles.mainDescription}>
+          特定の URL からアーティースト名やタイトル、ID
+          や画像などの情報を取得するユーティリティツール。YouTube や
+          SoundCloud、Vimeo、Bandcamp などをサポートしている
+        </p>
+      </section>
+      <section>
+        <h3 class={styles.mainName}>
+          <a
+            href="https://github.com/jamband/maytalz"
+            class={styles.mainLink}
+            target="_blank"
+            rel="noreferrer"
+            >Maytalz <IconUpRightFromSquare class={styles.mainLinkIcon} /></a
+          >
+        </h3>
+        <p class={styles.mainDescription}>
+          Nuxt と Contentful を使った Jamstack なブログのデモサイト。Headless
+          CMS や最新バージョンの Nuxt の動作を確認するときにも使用している
+        </p>
+      </section>
+      <section>
+        <h3 class={styles.mainName}>
+          <a
+            href="https://github.com/jamband/suerte"
+            class={styles.mainLink}
+            target="_blank"
+            rel="noreferrer"
+            >suerte <IconUpRightFromSquare class={styles.mainLinkIcon} /></a
+          >
+        </h3>
+        <p class={styles.mainDescription}>
+          Next.js と Bootstrap 構成での Storybook
+          の作成と公開をしているリポジトリ。Storybook
+          とその周辺ツールの動作を確認するときにも使用している
+        </p>
+      </section>
+      <section>
+        <h3 class={styles.mainName}>
+          <a
+            href="https://github.com/jamband/papers"
+            class={styles.mainLink}
+            target="_blank"
+            rel="noreferrer"
+            >Papers <IconUpRightFromSquare class={styles.mainLinkIcon} /></a
+          >
+        </h3>
+        <p class={styles.mainDescription}>
+          Laravel
+          を使って認証関連の複雑な実装を確認するために作ったリポジトリ。React
+          などを使わない場合の Blade
+          テンプレートやアセット周辺の動作確認にも使用している
+        </p>
+      </section>
+    </article>
+    <footer class={styles.footer}>
+      <p class={styles.footerDescription}>
+        その他のリポジトリに関しては以下をご覧ください
+      </p>
+      <a
+        href="https://github.com/jamband?tab=repositories"
+        class={styles.footerLink}
+        target="_blank"
+        rel="noreferrer"
+        ><IconGithub class={styles.footerLinkIcon} />Repositories</a
+      >
+    </footer>
+  </article>
+</div>

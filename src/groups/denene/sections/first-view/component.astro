@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import imageFirstViewScreenshotSm from "../../assets/first-view-screenshot-sm.webp";
+import imageFirstViewScreenshot from "../../assets/first-view-screenshot.webp";
+import styles from "./styles.module.css";
+---
+
+<div class={styles.container}>
+  <article class={styles.containerInner}>
+    <section class={styles.main}>
+      <h1 class={styles.mainTitle}>denene</h1>
+      <p class={styles.mainDescription}>
+        「控えめな Web」を探究し、標準と新しいさを見つける
+      </p>
+      <a
+        href="https://jamband.github.io/denene/"
+        class={styles.mainLink}
+        target="_blank"
+        rel="noreferrer">go to denene</a
+      >
+    </section>
+    <div class={styles.screenshotContainer}>
+      <Image
+        src={imageFirstViewScreenshotSm}
+        class={styles.screenshotSm}
+        alt="screenshot for mobile phone"
+      />
+      <Image
+        src={imageFirstViewScreenshot}
+        class={styles.screenshot}
+        alt="screenshot for pc"
+      />
+    </div>
+  </article>
+</div>

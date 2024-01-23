@@ -1,0 +1,111 @@
+.container {
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--gray-800)),
+    rgb(var(--gray-900))
+  );
+}
+
+.containerInner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  height: 95dvh;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+@media (min-width: 1024px) {
+  .containerInner {
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1536px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .main {
+    flex: 1;
+  }
+}
+
+.mainTitle {
+  color: rgb(var(--gray-100));
+  font-size: 2.75rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .mainTitle {
+    font-size: 3rem;
+  }
+}
+
+.mainDescription {
+  line-height: 1.85;
+}
+
+.mainLink {
+  align-self: center;
+  background: rgb(var(--gray-400) / 10%);
+  border: 2px solid rgb(var(--gray-400) / 80%);
+  border-radius: 0.5rem;
+  box-shadow: 0 14px 32px -12px rgb(var(--gray-400) / 20%);
+  color: rgb(var(--gray-100));
+  font-weight: bold;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.mainLink:active {
+  background: rgb(var(--gray-400) / 15%);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .mainLink:hover {
+    background: rgb(var(--gray-400) / 15%);
+  }
+}
+
+.screenshotContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 2rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .screenshotContainer {
+    margin: 0 10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .screenshotContainer {
+    flex: 1;
+    margin: 0 2rem;
+  }
+}
+
+.screenshotSm,
+.screenshot {
+  background: rgb(var(--gray-800));
+  border: 1px solid rgb(var(--gray-400) / 20%);
+  border-radius: 0.25rem;
+}
+
+.screenshotSm {
+  bottom: -5%;
+  left: -5%;
+  max-width: 25%;
+  position: absolute;
+}

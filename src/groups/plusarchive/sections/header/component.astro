@@ -1,0 +1,47 @@
+---
+import IconArrowLeft from "@/icons/icon-arrow-left.astro";
+import IconBars from "@/icons/icon-bars.astro";
+import IconXmark from "@/icons/icon-xmark.astro";
+import styles from "./styles.module.css";
+---
+
+<header class={styles.container}>
+  <div id="menu" class={styles.menu}>
+    <button class={styles.menuButton} aria-label="メニュー">
+      <IconBars class={styles.menuButtonIcon} />
+    </button>
+  </div>
+  <dialog id="dialog" class={styles.dialog}>
+    <form method="dialog" class={styles.dialogInner}>
+      <header class={styles.dialogHeader}>
+        <button class={styles.dialogHeaderClose} aria-label="閉じる">
+          <IconXmark class={styles.dialogHeaderCloseIcon} />
+        </button>
+      </header>
+      <div class={styles.dialogMain}>
+        <a href="/about/" class={styles.dialogMainLink}
+          ><IconArrowLeft
+            class={styles.dialogMainLinkIcon}
+          />トップページに戻る</a
+        >
+      </div>
+    </form>
+  </dialog>
+</header>
+
+<script>
+  const menu = document.querySelector<HTMLDivElement>("#menu");
+  if (!menu) throw Error("menu element does not exists.");
+
+  const dialog = document.querySelector<HTMLDialogElement>("#dialog");
+  if (!dialog) throw Error("dialog element does not exists.");
+
+  menu.addEventListener("click", () => {
+    dialog.showModal();
+  });
+
+  dialog.addEventListener("click", (event) => {
+    const target = event.target as HTMLElement;
+    if (["A", "DIALOG"].includes(target.nodeName)) dialog.close();
+  });
+</script>

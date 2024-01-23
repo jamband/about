@@ -1,0 +1,91 @@
+---
+import IconCode from "@/icons/icon-code.astro";
+import IconGithub from "@/icons/icon-github.astro";
+import styles from "./styles.module.css";
+---
+
+<div class={styles.container}>
+  <article class={styles.containerInner}>
+    <section class={styles.header}>
+      <h2 class={styles.headerTitle}>
+        Technology<br class={styles.headerTitleNewLine} aria-hidden="true" />
+        Stack
+      </h2>
+      <p class={styles.headerDescription}>
+        PlusArchive
+        の技術スタックを紹介します。以下のリストは現在のものであって、時間とともに変化していく可能性があります
+      </p>
+    </section>
+    <div class={styles.separator} role="separator">
+      <IconCode class={styles.separatorIcon} />
+    </div>
+    <article class={styles.main}>
+      <section>
+        <h3 class={styles.mainTitle}>Backend</h3>
+        <ul class={styles.mainTagList}>
+          <li class={styles.mainTagListItem}>PHP</li>
+          <li class={styles.mainTagListItem}>Laravel</li>
+          <li class={styles.mainTagListItem}>REST API</li>
+          <li class={styles.mainTagListItem}>PHPStan</li>
+          <li class={styles.mainTagListItem}>Larastan</li>
+          <li class={styles.mainTagListItem}>PHP Coding Standards Fixer</li>
+        </ul>
+      </section>
+      <section>
+        <h3 class={styles.mainTitle}>Frontend</h3>
+        <ul class={styles.mainTagList}>
+          <li class={styles.mainTagListItem}>TypeScript</li>
+          <li class={styles.mainTagListItem}>React</li>
+          <li class={styles.mainTagListItem}>Next.js</li>
+          <li class={styles.mainTagListItem}>Tailwind CSS</li>
+          <li class={styles.mainTagListItem}>React Query</li>
+          <li class={styles.mainTagListItem}>React Hook Form</li>
+          <li class={styles.mainTagListItem}>Valibot</li>
+          <li class={styles.mainTagListItem}>ESLint</li>
+          <li class={styles.mainTagListItem}>Prettier</li>
+          <li class={styles.mainTagListItem}>Jest</li>
+          <li class={styles.mainTagListItem}>React Testing Library</li>
+          <li class={styles.mainTagListItem}>msw</li>
+        </ul>
+      </section>
+      <section>
+        <h3 class={styles.mainTitle}>Database</h3>
+        <ul class={styles.mainTagList}>
+          <li class={styles.mainTagListItem}>MySQL</li>
+          <li class={styles.mainTagListItem}>SQLite</li>
+        </ul>
+      </section>
+      <section>
+        <h3 class={styles.mainTitle}>Others</h3>
+        <ul class={styles.mainTagList}>
+          <li class={styles.mainTagListItem}>Sakura VPS</li>
+          <li class={styles.mainTagListItem}>Ubuntu</li>
+          <li class={styles.mainTagListItem}>Nginx</li>
+          <li class={styles.mainTagListItem}>Deployer</li>
+        </ul>
+      </section>
+    </article>
+    <section class={styles.footer}>
+      <p class={styles.footerDescription}>
+        PlusArchive のコードはオープンソースとして GitHub
+        で管理しています。より詳しい内容については以下のリンクから見ることができます
+      </p>
+      <div class={styles.footerLinkList}>
+        <a
+          href="https://github.com/jamband/api.plusarchive.com"
+          class={styles.footerLinkListItem}
+          target="_blank"
+          rel="noreferrer"
+          ><IconGithub class={styles.footerLinkIcon} />Backend</a
+        >
+        <a
+          href="https://github.com/jamband/plusarchive.com"
+          class={styles.footerLinkListItem}
+          target="_blank"
+          rel="noreferrer"
+          ><IconGithub class={styles.footerLinkIcon} />Frontend</a
+        >
+      </div>
+    </section>
+  </article>
+</div>

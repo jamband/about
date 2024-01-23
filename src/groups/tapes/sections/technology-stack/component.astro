@@ -1,0 +1,54 @@
+---
+import IconCode from "@/icons/icon-code.astro";
+import IconGithub from "@/icons/icon-github.astro";
+import styles from "./styles.module.css";
+---
+
+<div class={styles.container}>
+  <article class={styles.containerInner}>
+    <section class={styles.header}>
+      <h2 class={styles.headerTitle}>
+        Technology<br class={styles.headerTitleNewLine} aria-hidden="true" />
+        Stack
+      </h2>
+      <p class={styles.headerDescription}>
+        tapes
+        の技術スタックを紹介します。以下のリストは現在のものであって、時間とともに変化していく可能性があります
+      </p>
+    </section>
+    <div class={styles.separator} role="separator">
+      <IconCode class={styles.separatorIcon} />
+    </div>
+    <article class={styles.main}>
+      <section>
+        <h3 class={styles.mainTitle}>Frontend</h3>
+        <ul class={styles.mainTagList}>
+          <li class={styles.mainTagListItem}>TypeScript</li>
+          <li class={styles.mainTagListItem}>SvelteKit</li>
+          <li class={styles.mainTagListItem}>Tailwind CSS</li>
+          <li class={styles.mainTagListItem}>ESLint</li>
+          <li class={styles.mainTagListItem}>Prettier</li>
+        </ul>
+      </section>
+      <section>
+        <h3 class={styles.mainTitle}>Others</h3>
+        <ul class={styles.mainTagList}>
+          <li class={styles.mainTagListItem}>GitHub Actions</li>
+          <li class={styles.mainTagListItem}>GitHub Pages</li>
+        </ul>
+      </section>
+    </article>
+    <section class={styles.footer}>
+      <p class={styles.footerDescription}>
+        tapes のコードはオープンソースとして GitHub
+        で管理しています。より詳しい内容については以下のリンクから見ることができます
+      </p>
+      <a
+        href="https://github.com/jamband/tapes"
+        class={styles.footerLink}
+        target="_blank"
+        rel="noreferrer"><IconGithub class={styles.footerLinkIcon} />Frontend</a
+      >
+    </section>
+  </article>
+</div>

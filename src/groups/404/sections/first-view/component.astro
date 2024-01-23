@@ -1,0 +1,16 @@
+---
+import IconArrowLeft from "@/icons/icon-arrow-left.astro";
+import IconCode from "@/icons/icon-code.astro";
+import styles from "./styles.module.css";
+---
+
+<div class={styles.container}>
+  <h1 class={styles.title}>Not Found</h1>
+  <p class={styles.description}>
+    このページはすでに削除されているか、もしくはページが存在しません
+  </p>
+  <IconCode class={styles.separator} />
+  <a class={styles.link} href="/about/"
+    ><IconArrowLeft class={styles.linkIcon} />トップページに戻る</a
+  >
+</div>

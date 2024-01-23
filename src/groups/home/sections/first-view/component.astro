@@ -1,0 +1,18 @@
+---
+import IconArrowDown from "@/icons/icon-arrow-down.astro";
+import styles from "./styles.module.css";
+---
+
+<div class={styles.container}>
+  <article class={styles.containerInner}>
+    <h1 class={styles.title}>About<br />me</h1>
+    <p class={styles.description}>
+      音楽と歩くことが好きな Web Developer
+      です。ここでは、わたしが作ったものの一部を紹介しています。よろしければ、続きをお読みください
+    </p>
+    <a href="#repositories" class={styles.link} aria-label="続きを読む"
+      ><IconArrowDown class={styles.linkIcon} /></a
+    >
+    <p class="link-description">続きを読む</p>
+  </article>
+</div>

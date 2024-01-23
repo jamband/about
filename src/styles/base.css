@@ -5,7 +5,6 @@
 
 html {
   line-height: 1.5;
-  scroll-behavior: smooth;
   scrollbar-gutter: stable;
   text-size-adjust: 100%;
 }

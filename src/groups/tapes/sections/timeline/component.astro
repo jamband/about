@@ -1,0 +1,35 @@
+---
+import styles from "./styles.module.css";
+---
+
+<div class={styles.container}>
+  <article class={styles.containerInner}>
+    <h2 class={styles.title}>Timeline</h2>
+    <div class={styles.sectionContainer}>
+      <section class={styles.section}>
+        <h3 class={styles.sectionDate}>2022-12 -</h3>
+        <ul class={styles.sectionList}>
+          <li class={styles.sectionListItem}>
+            Frontend を SvelteKit の安定版にアップデート
+          </li>
+        </ul>
+      </section>
+      <section class={styles.section}>
+        <h3 class={styles.sectionDate}>2021-08 - 2022-11</h3>
+        <ul class={styles.sectionList}>
+          <li class={styles.sectionListItem}>
+            Frontend に SvelteKit Beta を使用
+          </li>
+        </ul>
+      </section>
+      <section class={styles.section}>
+        <h3 class={styles.sectionDate}>2021-08</h3>
+        <ul class={styles.sectionList}>
+          <li class={styles.sectionListItem}>
+            リリース & コードを GitHub に公開
+          </li>
+        </ul>
+      </section>
+    </div>
+  </article>
+</div>

@@ -1,0 +1,138 @@
+.container {
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--gray-800)),
+    rgb(var(--gray-900))
+  );
+}
+
+.containerInner {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 6rem 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.headerTitle {
+  color: rgb(var(--gray-100));
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.headerDescription {
+  line-height: 1.85;
+}
+
+@media (min-width: 768px) {
+  .headerDescription {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headerDescription {
+    padding: 0 10rem;
+  }
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.separatorIcon {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.main {
+  display: grid;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .main {
+    gap: 4rem 3rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 2rem;
+  }
+}
+
+.mainName {
+  color: rgb(var(--gray-100));
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.mainLink {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .mainLink:hover {
+    color: rgb(var(--sky-500));
+  }
+}
+
+.mainLinkIcon {
+  color: rgb(var(--sky-500));
+  height: 0.85rem;
+  width: 0.85rem;
+}
+
+.mainDescription {
+  line-height: 1.85;
+  margin-top: 0.5rem;
+}
+
+.footer {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footerDescription {
+  line-height: 1.85;
+}
+
+.footerLink {
+  align-items: center;
+  background: rgb(var(--sky-500) / 20%);
+  border: 1px solid rgb(var(--sky-500) / 40%);
+  border-radius: 0.5rem;
+  box-shadow: 0 14px 32px -12px rgb(var(--sky-500) / 30%);
+  color: rgb(var(--sky-500));
+  display: inline-flex;
+  font-weight: bold;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.footerLink:active {
+  background: rgb(var(--sky-500) / 30%);
+  border: 1px solid rgb(var(--sky-500) / 50%);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footerLink:hover {
+    background: rgb(var(--sky-500) / 30%);
+    border: 1px solid rgb(var(--sky-500) / 50%);
+  }
+}
+
+.footerLinkIcon {
+  height: 1.25rem;
+  width: 1.25rem;
+}

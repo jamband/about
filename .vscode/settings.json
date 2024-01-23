@@ -5,5 +5,5 @@
   "editor.codeActionsOnSave": { "source.fixAll": "explicit" },
   "editor.formatOnSave": true,
   "prettier.documentSelectors": ["**/*.astro"],
-  "stylelint.validate": ["astro", "css"]
+  "stylelint.validate": ["css"]
 }

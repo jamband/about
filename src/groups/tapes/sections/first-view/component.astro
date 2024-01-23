@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import imageFirstViewScreenshotSm from "../../assets/first-view-screenshot-sm.webp";
+import imageFirstViewScreenshot from "../../assets/first-view-screenshot.webp";
+import styles from "./styles.module.css";
+---
+
+<div class={styles.container}>
+  <article class={styles.containerInner}>
+    <section class={styles.main}>
+      <h1 class={styles.mainTitle}>tapes</h1>
+      <p class={styles.mainDescription}>
+        その月に聴いた音楽、その年に聴いた音楽を記録する
+      </p>
+      <a
+        href="https://jamband.github.io/tapes/"
+        class={styles.mainLink}
+        target="_blank"
+        rel="noreferrer">Go to tapes</a
+      >
+    </section>
+    <div class={styles.screenshotContainer}>
+      <Image
+        src={imageFirstViewScreenshotSm}
+        class={styles.screenshotSm}
+        alt="screenshot for mobile phone"
+      />
+      <Image
+        src={imageFirstViewScreenshot}
+        class={styles.screenshot}
+        alt="screenshot for pc"
+      />
+    </div>
+  </article>
+</div>

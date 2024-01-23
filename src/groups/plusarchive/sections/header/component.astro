@@ -1,7 +1,7 @@
 ---
-import IconArrowLeft from "@/icons/icon-arrow-left.astro";
-import IconBars from "@/icons/icon-bars.astro";
-import IconXmark from "@/icons/icon-xmark.astro";
+import { IconArrowLeft } from "@/icons/arrow-left";
+import { IconBars } from "@/icons/bars";
+import { IconXMark } from "@/icons/xmark";
 import styles from "./styles.module.css";
 ---
 
@@ -15,7 +15,7 @@ import styles from "./styles.module.css";
     <form method="dialog" class={styles.dialogInner}>
       <header class={styles.dialogHeader}>
         <button class={styles.dialogHeaderClose} aria-label="閉じる">
-          <IconXmark class={styles.dialogHeaderCloseIcon} />
+          <IconXMark class={styles.dialogHeaderCloseIcon} />
         </button>
       </header>
       <div class={styles.dialogMain}>

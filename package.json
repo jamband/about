@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@astrojs/check": "0.4.1",
-    "astro": "4.2.1",
+    "astro": "4.2.3",
     "prettier": "3.2.4",
     "prettier-plugin-astro": "0.13.0",
     "sharp": "0.33.2",

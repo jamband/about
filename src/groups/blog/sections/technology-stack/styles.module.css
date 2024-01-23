@@ -62,7 +62,7 @@
 .separator {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .separatorIcon {

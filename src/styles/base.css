@@ -6,7 +6,7 @@
 html {
   line-height: 1.5;
   scrollbar-gutter: stable;
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -28,6 +28,7 @@ html:has(dialog[open]) {
 }
 
 dialog::backdrop {
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
 

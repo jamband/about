@@ -1,6 +1,7 @@
 @import url("/src/styles/base.css");
 
 :root {
+  /* color */
   --gray-100: 236 239 244;
   --gray-400: 183 180 199;
   --gray-800: 19 17 26;

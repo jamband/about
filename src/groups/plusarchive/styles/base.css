@@ -1,8 +1,11 @@
 @import url("/src/styles//base.css");
 
 :root {
+  /* font family */
   /* stylelint-disable-next-line value-keyword-case */
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* color */
   --gray-100: 236 239 244;
   --gray-400: 183 180 199;
   --gray-700: 36 34 43;

@@ -4,6 +4,5 @@
   },
   "editor.codeActionsOnSave": { "source.fixAll": "explicit" },
   "editor.formatOnSave": true,
-  "prettier.documentSelectors": ["**/*.astro"],
-  "stylelint.validate": ["css"]
+  "prettier.documentSelectors": ["**/*.astro"]
 }

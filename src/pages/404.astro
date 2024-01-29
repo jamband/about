@@ -1,7 +1,15 @@
 ---
-import "@/groups/404/styles/base.css";
+import "./_404/styles/base.css";
 
-import { Base } from "@/groups/404/base";
+import { Layout } from "@/layouts/layout";
+import { FirstView } from "./_404/sections/first-view";
+import styles from "./_404/styles/page.module.css";
 ---
 
-<Base />
+<Layout title="ページが見つかりませんでした">
+  <main class={styles.container}>
+    <div class={styles.containerInner}>
+      <FirstView />
+    </div>
+  </main>
+</Layout>

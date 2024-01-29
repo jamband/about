@@ -1,7 +1,18 @@
 ---
-import "@/groups/home/styles/base.css";
+import "./_home/styles/base.css";
 
-import { Base } from "@/groups/home/base";
+import { Layout } from "@/layouts/layout";
+import { FirstView } from "./_home/sections/first-view";
+import { Footer } from "./_home/sections/footer";
+import { OtherRepositories } from "./_home/sections/other-repositories";
+import { Repositories } from "./_home/sections/repositories";
 ---
 
-<Base />
+<Layout>
+  <main>
+    <FirstView />
+    <Repositories />
+    <OtherRepositories />
+  </main>
+  <Footer />
+</Layout>

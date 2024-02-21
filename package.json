@@ -12,8 +12,8 @@
     "clean": "node scripts/clean.js"
   },
   "dependencies": {
-    "@astrojs/check": "0.5.4",
-    "astro": "4.4.0",
+    "@astrojs/check": "0.5.5",
+    "astro": "4.4.1",
     "prettier": "3.2.5",
     "prettier-plugin-astro": "0.13.0",
     "sharp": "0.33.2",

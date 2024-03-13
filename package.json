@@ -6,14 +6,14 @@
     "build": "astro build",
     "preview": "astro preview --open",
     "typecheck": "astro check && tsc",
-    "format": "prettier --check .",
     "stylelint": "stylelint \"src/**/*.css\"",
+    "format": "prettier --check .",
     "clear": "node scripts/clear.js",
     "clean": "node scripts/clean.js"
   },
   "dependencies": {
-    "@astrojs/check": "0.5.6",
-    "astro": "4.4.9",
+    "@astrojs/check": "0.5.8",
+    "astro": "4.5.2",
     "prettier": "3.2.5",
     "prettier-plugin-astro": "0.13.0",
     "sharp": "0.33.2",
@@ -21,6 +21,6 @@
     "stylelint-config-standard": "36.0.0",
     "stylelint-order": "6.0.4",
     "the-new-css-reset": "1.11.2",
-    "typescript": "5.3.3"
+    "typescript": "5.4.2"
   }
 }

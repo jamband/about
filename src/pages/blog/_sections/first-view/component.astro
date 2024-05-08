@@ -8,7 +8,10 @@ import styles from "./styles.module.css";
 <div class={styles.container}>
   <article class={styles.containerInner}>
     <section class={styles.main}>
-      <h1 class={styles.mainTitle}>blog</h1>
+      <h1 class={styles.mainTitle}>
+        <div class={styles.mainTitlePrefix} aria-hidden="true">//</div>
+        blog
+      </h1>
       <p class={styles.mainDescription}>
         新しいものを使ってみる、難しいものを紐解く、そしてそれらを記録する
       </p>

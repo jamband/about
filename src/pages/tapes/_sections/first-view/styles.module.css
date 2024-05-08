@@ -1,9 +1,5 @@
 .container {
-  background: linear-gradient(
-    to bottom,
-    rgb(var(--gray-800)),
-    rgb(var(--gray-900))
-  );
+  background: rgb(var(--gray-800));
 }
 
 .containerInner {
@@ -38,9 +34,13 @@
 }
 
 .mainTitle {
+  align-items: center;
   color: rgb(var(--gray-100));
+  display: flex;
   font-size: 2.75rem;
   font-weight: bold;
+  gap: 0.5rem;
+  justify-content: center;
   line-height: 1.2;
 }
 
@@ -48,6 +48,12 @@
   .mainTitle {
     font-size: 3rem;
   }
+}
+
+.mainTitlePrefix {
+  color: rgb(var(--purple-500));
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .mainDescription {

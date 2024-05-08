@@ -5,7 +5,10 @@ import styles from "./styles.module.css";
 
 <div class={styles.container}>
   <article class={styles.containerInner}>
-    <h1 class={styles.title}>About<br />me</h1>
+    <h1 class={styles.title}>
+      <div class={styles.titlePrefix} aria-hidden="true">//</div>
+      About Me
+    </h1>
     <p class={styles.description}>
       音楽と歩くことが好きな Web Developer
       です。ここでは、わたしが作ったものの一部を紹介しています。よろしければ、続きをお読みください

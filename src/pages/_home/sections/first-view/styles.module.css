@@ -16,10 +16,26 @@
 }
 
 .title {
+  align-items: center;
   color: rgb(var(--gray-100));
-  font-size: 4rem;
+  display: flex;
+  font-size: 3rem;
   font-weight: bold;
+  gap: 0.5rem;
+  justify-content: center;
   line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+.titlePrefix {
+  color: rgb(var(--sky-500));
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .description {

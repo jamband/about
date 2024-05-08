@@ -7,7 +7,10 @@ import styles from "./styles.module.css";
 <div id="repositories" class={styles.container}>
   <article class={styles.containerInner}>
     <header class={styles.header}>
-      <h2 class={styles.headerTitle}>Repositories</h2>
+      <h2 class={styles.headerTitle}>
+        <div class={styles.headerTitlePrefix} aria-hidden="true">//</div>
+        Repositories
+      </h2>
       <p class={styles.headerDescription}>
         書いたコードの一部は GitHub
         にて公開しています。アーカイブ化されていないすべてのリポジトリは、わたしがそこから離れていくまで、ずっと保守していきます。技術的な詳細については以下のリンクから見ることができます

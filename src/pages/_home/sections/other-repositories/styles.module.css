@@ -16,10 +16,25 @@
 }
 
 .headerTitle {
+  align-items: center;
   color: rgb(var(--gray-100));
+  display: flex;
   font-size: 2.5rem;
   font-weight: bold;
+  justify-content: center;
   line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .headerTitle {
+    gap: 0.5rem;
+  }
+}
+
+.headerTitlePrefix {
+  color: rgb(var(--sky-500));
+  font-size: 1.75rem;
+  font-weight: 900;
 }
 
 .headerDescription {
@@ -105,7 +120,7 @@
 .footerLink {
   align-items: center;
   background: rgb(var(--sky-500) / 20%);
-  border: 1px solid rgb(var(--sky-500) / 40%);
+  border: 2px solid rgb(var(--sky-500) / 40%);
   border-radius: 0.5rem;
   box-shadow: 0 14px 32px -12px rgb(var(--sky-500) / 30%);
   color: rgb(var(--sky-500));
@@ -118,13 +133,13 @@
 
 .footerLink:active {
   background: rgb(var(--sky-500) / 30%);
-  border: 1px solid rgb(var(--sky-500) / 50%);
+  border: 2px solid rgb(var(--sky-500) / 50%);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .footerLink:hover {
     background: rgb(var(--sky-500) / 30%);
-    border: 1px solid rgb(var(--sky-500) / 50%);
+    border: 2px solid rgb(var(--sky-500) / 50%);
   }
 }
 

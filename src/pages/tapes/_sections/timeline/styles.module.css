@@ -43,7 +43,7 @@
 }
 
 .section {
-  border-left: 2px solid rgb(var(--purple-400) / 60%);
+  border-left: 2px solid rgb(var(--gray-400) / 60%);
   display: flex;
   flex-flow: column;
   gap: 0.5rem;
@@ -56,10 +56,10 @@
 
 .sectionDate {
   align-self: flex-start;
-  background: rgb(var(--purple-400) / 10%);
-  border: 1px solid rgb(var(--purple-400) / 20%);
+  background: rgb(var(--gray-400) / 10%);
+  border: 1px solid rgb(var(--gray-400) / 20%);
   border-radius: 0.5rem;
-  color: rgb(var(--purple-400));
+  color: rgb(var(--gray-100));
   font-family: var(--font-mono);
   font-size: 0.975rem;
   font-weight: bold;

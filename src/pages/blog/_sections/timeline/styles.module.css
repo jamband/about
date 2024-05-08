@@ -43,7 +43,7 @@
 }
 
 .section {
-  border-left: 2px solid rgb(var(--gray-400) / 80%);
+  border-left: 2px solid rgb(var(--gray-400) / 60%);
   display: flex;
   flex-flow: column;
   gap: 0.5rem;

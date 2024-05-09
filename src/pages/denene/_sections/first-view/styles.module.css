@@ -7,16 +7,30 @@
   display: flex;
   flex-flow: column;
   gap: 3rem;
-  height: 95dvh;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .containerInner {
+    padding: 3rem 1rem 6rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .containerInner {
     flex-flow: row;
     margin: 0 auto;
-    max-width: 1536px;
+    max-width: 1096px;
+    padding: 6rem 1rem 11rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .containerInner {
+    gap: 5rem;
+    max-width: 1296px;
+    padding: 7rem 1rem 16rem;
   }
 }
 

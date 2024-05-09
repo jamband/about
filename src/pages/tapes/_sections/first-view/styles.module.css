@@ -7,16 +7,39 @@
   display: flex;
   flex-flow: column;
   gap: 3rem;
-  height: 95dvh;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding: 1rem 1rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .containerInner {
+    padding: 3rem 1rem 5rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .containerInner {
     flex-flow: row;
+    gap: 1rem;
     margin: 0 auto;
-    max-width: 1536px;
+    max-width: 1024px;
+    padding: 4rem 1rem 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerInner {
+    gap: 4rem;
+    max-width: 1048px;
+    padding: 8rem 1rem 12rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .containerInner {
+    gap: 3rem;
+    max-width: 1280px;
+    padding: 8rem 0 15rem;
   }
 }
 

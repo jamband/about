@@ -7,16 +7,37 @@
   display: flex;
   flex-flow: column;
   gap: 3rem;
-  height: 95dvh;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 4rem;
+}
+
+@media (min-width: 768px) {
+  .containerInner {
+    padding: 5rem 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .containerInner {
     flex-flow: row;
+    gap: 2rem;
     margin: 0 auto;
+    max-width: 1024px;
+    padding: 12rem 5rem 14rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerInner {
+    max-width: 1280px;
+    padding: 7rem 2rem 12rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .containerInner {
     max-width: 1536px;
+    padding: 9rem 4rem 16rem;
   }
 }
 

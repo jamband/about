@@ -72,11 +72,12 @@
   align-self: center;
   background: rgb(var(--gray-400) / 10%);
   border: 2px solid rgb(var(--gray-400) / 80%);
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   box-shadow: 0 14px 32px -12px rgb(var(--gray-400) / 20%);
   color: rgb(var(--gray-100));
   display: inline-block;
   font-weight: bold;
+  margin: 1.25rem 0 0;
   padding: 0.75rem 1.25rem;
 }
 

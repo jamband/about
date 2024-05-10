@@ -8,31 +8,25 @@ import styles from "./styles.module.css";
       <div class={styles.titlePrefix} aria-hidden="true">//</div>
       Timeline
     </h2>
-    <div class={styles.sectionContainer}>
-      <section class={styles.section}>
-        <h3 class={styles.sectionDate}>2022-10 -</h3>
-        <ul class={styles.sectionList}>
-          <li class={styles.sectionListItem}>
-            Frontend を SvelteKit Beta から Astro にリプレイス
-          </li>
+    <ul class={styles.timeline}>
+      <li class={styles.timelineList}>
+        <div class={styles.timelineDate}>2022.10</div>
+        <ul class={styles.timelineContent}>
+          <li>Frontend を SvelteKit Beta から Astro にリプレイス</li>
         </ul>
-      </section>
-      <section class={styles.section}>
-        <h3 class={styles.sectionDate}>2022-02 - 2022-09</h3>
-        <ul class={styles.sectionList}>
-          <li class={styles.sectionListItem}>
-            Frontend に SvelteKit Beta を使用
-          </li>
+      </li>
+      <li class={styles.timelineList}>
+        <div class={styles.timelineDate}>2022.09</div>
+        <ul class={styles.timelineContent}>
+          <li>Frontend に SvelteKit Beta を使用</li>
         </ul>
-      </section>
-      <section class={styles.section}>
-        <h3 class={styles.sectionDate}>2022-02</h3>
-        <ul class={styles.sectionList}>
-          <li class={styles.sectionListItem}>
-            リリース & コードを GitHub に公開
-          </li>
+      </li>
+      <li class={styles.timelineList}>
+        <div class={styles.timelineDate}>2022.02</div>
+        <ul class={styles.timelineContent}>
+          <li>リリース & コードを GitHub に公開</li>
         </ul>
-      </section>
-    </div>
+      </li>
+    </ul>
   </article>
 </div>

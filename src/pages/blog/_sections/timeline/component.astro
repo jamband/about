@@ -8,43 +8,33 @@ import styles from "./styles.module.css";
       <div class={styles.titlePrefix} aria-hidden="true">//</div>
       Timeline
     </h2>
-    <div class={styles.sectionContainer}>
-      <section class={styles.section}>
-        <h3 class={styles.sectionDate}>2023-02 -</h3>
-        <ul class={styles.sectionList}>
-          <li class={styles.sectionListItem}>
-            Frontend を Next.js から Astro にリプレイス
-          </li>
+    <ul class={styles.timeline}>
+      <li class={styles.timelineList}>
+        <div class={styles.timelineDate}>2023.02</div>
+        <ul class={styles.timelineContent}>
+          <li>Frontend を Next.js から Astro にリプレイス</li>
         </ul>
-      </section>
-      <section class={styles.section}>
-        <h3 class={styles.sectionDate}>2021-08 - 2023-01</h3>
-        <ul class={styles.sectionList}>
-          <li class={styles.sectionListItem}>
-            Frontend を Nuxt から Next.js にリプレイス
-          </li>
-          <li class={styles.sectionListItem}>
-            ホスティング先を Netlify から GitHub Pages にリプレイス
-          </li>
+      </li>
+      <li class={styles.timelineList}>
+        <div class={styles.timelineDate}>2021.08</div>
+        <ul class={styles.timelineContent}>
+          <li>Frontend を Nuxt から Next.js にリプレイス</li>
+          <li>ホスティング先を Netlify から GitHub Pages にリプレイス</li>
         </ul>
-      </section>
-      <section class={styles.section}>
-        <h3 class={styles.sectionDate}>2020-06 - 2021-07</h3>
-        <ul class={styles.sectionList}>
-          <li class={styles.sectionListItem}>Frontend に Nuxt を使用</li>
-          <li class={styles.sectionListItem}>
-            ホスティング先として Netlify を使用
-          </li>
+      </li>
+      <li class={styles.timelineList}>
+        <div class={styles.timelineDate}>2020.06</div>
+        <ul class={styles.timelineContent}>
+          <li>Frontend に Nuxt を使用</li>
+          <li>ホスティング先として Netlify を使用</li>
         </ul>
-      </section>
-      <section class={styles.section}>
-        <h3 class={styles.sectionDate}>2020-06</h3>
-        <ul class={styles.sectionList}>
-          <li class={styles.sectionListItem}>
-            リリース & コードを GitHub に公開
-          </li>
+      </li>
+      <li class={styles.timelineList}>
+        <div class={styles.timelineDate}>2020.06</div>
+        <ul class={styles.timelineContent}>
+          <li>リリース & コードを GitHub に公開</li>
         </ul>
-      </section>
-    </div>
+      </li>
+    </ul>
   </article>
 </div>

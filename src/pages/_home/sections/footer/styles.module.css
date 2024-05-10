@@ -1,5 +1,6 @@
 .container {
   background: rgb(var(--gray-900));
+  border-bottom: 5px solid rgb(var(--sky-500) / 70%);
   border-top: 2px solid rgb(var(--gray-400) / 20%);
 }
 

@@ -1,5 +1,6 @@
 .container {
   background: rgb(var(--gray-800));
+  border-top: 5px solid rgb(var(--pink-500) / 70%);
   padding: 1rem;
 }
 

@@ -67,11 +67,23 @@
   display: flex;
   flex-flow: column;
   gap: 0.5rem;
-  padding: 0 0 3rem 2.5rem;
+  padding: 0 0 3rem 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .timelineContent {
+    padding: 0 0 3rem 2.5rem;
+  }
 }
 
 .timelineList:last-child .timelineContent {
-  padding: 0 0 0 2.5rem;
+  padding: 0 0 0 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .timelineList:last-child .timelineContent {
+    padding: 0 0 0 2.5rem;
+  }
 }
 
 .timelineContent::before {

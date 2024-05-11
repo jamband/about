@@ -29,9 +29,8 @@
 
 @media (min-width: 1536px) {
   .containerInner {
-    gap: 8rem;
-    max-width: 1280px;
-    padding: 12rem 1rem 19rem;
+    max-width: 1420px;
+    padding: 10rem 1rem 16rem;
   }
 }
 

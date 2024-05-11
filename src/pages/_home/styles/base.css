@@ -8,6 +8,15 @@
   --gray-900: 2 0 11;
   --yellow-500: 247 214 142;
   --sky-500: 14 165 233;
+
+  /* menu */
+  --menu-brand-color: 14 165 233;
+  --menu-button-color: 236 239 244;
+  --menu-button-background: 40 38 47;
+  --menu-offcanvas-color: 183 180 199;
+  --menu-offcanvas-color-light: 236 239 244;
+  --menu-offcanvas-background: 36 34 43;
+  --menu-offcanvas-background-light: 50 48 57;
 }
 
 body {

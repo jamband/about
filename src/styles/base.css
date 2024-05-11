@@ -23,13 +23,16 @@ img {
 }
 
 html:has(dialog[open]) {
-  opacity: 0.95;
   overflow: hidden;
 }
 
-dialog::backdrop {
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+dialog {
+  background: none;
+  border: none;
+  max-height: none;
+  max-width: none;
+  overflow: visible;
+  padding: 0;
 }
 
 :focus {

@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+.button {
+  border-radius: 0.25rem;
+  line-height: 0;
+  padding: 1rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background: rgb(var(--menu-button-background));
+    color: rgb(var(--menu-button-color));
+  }
+}
+
+.button:active {
+  background: rgb(var(--menu-button-background));
+  color: rgb(var(--menu-button-color));
+}
+
+.buttonIcon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.offcanvasContainer {
+  border-top: 5px solid rgb(var(--menu-brand-color) / 70%);
+  height: 100%;
+  inset: 0 0 auto auto;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.offcanvasContainer::backdrop {
+  background: rgb(0 0 0 / 30%);
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  .offcanvasContainer {
+    width: 25rem;
+  }
+}
+
+.offcanvas {
+  background: rgb(var(--menu-offcanvas-background));
+  color: rgb(var(--menu-offcanvas-color));
+  height: 100%;
+  overflow: scroll;
+}
+
+.transition {
+  translate: 100% 0;
+}
+
+.transition::backdrop {
+  opacity: 0;
+}
+
+.title {
+  align-items: center;
+  color: rgb(var(--menu-offcanvas-color-light));
+  display: flex;
+  font-weight: 700;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 0.5rem 1.25rem;
+}
+
+.links {
+  display: flex;
+  flex-flow: column;
+}
+
+.link {
+  align-items: center;
+  display: flex;
+  padding: 0.5rem 2.25rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    background: rgb(var(--menu-offcanvas-background-light));
+    color: rgb(var(--menu-offcanvas-color-light));
+  }
+}
+
+.link:active {
+  background: rgb(var(--menu-offcanvas-background-light));
+  color: rgb(var(--menu-offcanvas-color-light));
+}
+
+.linkIcon {
+  height: 0.9rem;
+  margin: 0 0 0 auto;
+  width: 0.9rem;
+}

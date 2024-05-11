@@ -1,0 +1,179 @@
+---
+import { IconArrowRight } from "@/icons/arrow-right";
+import { IconBars } from "@/icons/bars";
+import { IconUpRightFromSquare } from "@/icons/up-right-from-square";
+import { IconXMark } from "@/icons/xmark";
+import styles from "./styles.module.css";
+---
+
+<div class={styles.container}>
+  <div id="menu" class={styles.menu}>
+    <button class={styles.button} aria-label="メニュー">
+      <IconBars class={styles.buttonIcon} />
+    </button>
+  </div>
+  <dialog id="offcanvas" class={styles.offcanvasContainer}>
+    <nav class={styles.offcanvas}>
+      <div class={styles.title}>Actions</div>
+      <ul class={styles.links}>
+        <button id="close" class={styles.link} autofocus
+          >Close<IconXMark class={styles.linkIcon} /></button
+        >
+        <a href="/about/" class={styles.link}
+          >Home<IconArrowRight class={styles.linkIcon} /></a
+        >
+      </ul>
+      <div class={styles.title}>Repositories</div>
+      <ul class={styles.links}>
+        <li>
+          <a href="/about/plusarchive/" class={styles.link}
+            >PlusArchive<IconArrowRight class={styles.linkIcon} /></a
+          >
+        </li>
+        <li>
+          <a href="/about/tapes/" class={styles.link}
+            >tapes<IconArrowRight class={styles.linkIcon} /></a
+          >
+        </li>
+        <li>
+          <a href="/about/blog/" class={styles.link}
+            >blog<IconArrowRight class={styles.linkIcon} /></a
+          >
+        </li>
+        <li>
+          <a href="/about/denene/" class={styles.link}
+            >denene<IconArrowRight class={styles.linkIcon} /></a
+          >
+        </li>
+      </ul>
+      <div class={styles.title}>Other Repositories</div>
+      <ul class={styles.links}>
+        <li>
+          <a
+            href="https://github.com/jamband/ripple"
+            class={styles.link}
+            rel="noreferrer"
+            target="_blank"
+            >ripple<IconUpRightFromSquare class={styles.linkIcon} /></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/jamband/maytalz"
+            class={styles.link}
+            rel="noreferrer"
+            target="_blank"
+            >Maytalz<IconUpRightFromSquare class={styles.linkIcon} /></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/jamband/suerte"
+            class={styles.link}
+            rel="noreferrer"
+            target="_blank"
+            >Suerte<IconUpRightFromSquare class={styles.linkIcon} /></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/jamband/papers"
+            class={styles.link}
+            rel="noreferrer"
+            target="_blank"
+            >Papers<IconUpRightFromSquare class={styles.linkIcon} /></a
+          >
+        </li>
+      </ul>
+      <div class={styles.title}>Other Links</div>
+      <ul class={styles.links}>
+        <li>
+          <a
+            href="https://twitter.com/livejam_db"
+            class={styles.link}
+            rel="noreferrer"
+            target="_blank"
+            >X<IconUpRightFromSquare class={styles.linkIcon} /></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://zenn.dev/jamband"
+            class={styles.link}
+            rel="noreferrer"
+            target="_blank"
+            >Zenn<IconUpRightFromSquare class={styles.linkIcon} /></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://qiita.com/livejam_db"
+            class={styles.link}
+            rel="noreferrer"
+            target="_blank"
+            >Qiita<IconUpRightFromSquare class={styles.linkIcon} /></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://stackoverflow.com/users/678947/jamband"
+            rel="noreferrer"
+            target="_blank"
+            class={styles.link}
+            >Stack Overflow<IconUpRightFromSquare class={styles.linkIcon} /></a
+          >
+        </li>
+      </ul>
+    </nav>
+  </dialog>
+</div>
+
+<script>
+  import styles from "./styles.module.css";
+
+  const menu = document.querySelector<HTMLDivElement>("#menu");
+  if (!menu) throw new Error("#menu element does not exists.");
+
+  const offcanvas = document.querySelector<HTMLDialogElement>("#offcanvas");
+  if (!offcanvas) throw new Error("#offcanvas element does not exists.");
+
+  const close = document.querySelector<HTMLButtonElement>("#close");
+  if (!close) throw new Error("#close element does not exists.");
+
+  function offcanvasShow() {
+    offcanvas?.classList.add(styles.transition);
+    offcanvas?.showModal();
+
+    requestAnimationFrame(() => {
+      offcanvas?.classList.remove(styles.transition);
+    });
+  }
+
+  function offcanvasClose() {
+    offcanvas?.classList.add(styles.transition);
+
+    offcanvas?.addEventListener(
+      "transitionend",
+      () => {
+        offcanvas?.classList.remove(styles.transition);
+        offcanvas.close();
+      },
+      { once: true },
+    );
+  }
+
+  menu.addEventListener("click", offcanvasShow);
+
+  offcanvas.addEventListener("click", (event) => {
+    if (event.target === offcanvas) offcanvasClose();
+  });
+
+  close.addEventListener("click", offcanvasClose);
+
+  offcanvas.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      event.preventDefault();
+      offcanvasClose();
+    }
+  });
+</script>

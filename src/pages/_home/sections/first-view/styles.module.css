@@ -1,6 +1,5 @@
 .container {
   background: rgb(var(--gray-800));
-  border-top: 5px solid rgb(var(--sky-500) / 70%);
 }
 
 .containerInner {
@@ -11,13 +10,19 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 768px;
-  padding: 9.5rem 1rem;
+  padding: 6rem 1rem 7rem;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .containerInner {
-    padding: 20rem 1rem;
+    padding: 16rem 1rem 19rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerInner {
+    padding: 18rem 1rem 20rem;
   }
 }
 

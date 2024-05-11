@@ -13,6 +13,15 @@
   --gray-900: 2 0 11;
   --purple-400: 192 132 252;
   --purple-500: 168 85 247;
+
+  /* menu */
+  --menu-brand-color: 168 85 247;
+  --menu-button-color: 236 239 244;
+  --menu-button-background: 40 38 47;
+  --menu-offcanvas-color: 183 180 199;
+  --menu-offcanvas-color-light: 236 239 244;
+  --menu-offcanvas-background: 36 34 43;
+  --menu-offcanvas-background-light: 50 48 57;
 }
 
 body {

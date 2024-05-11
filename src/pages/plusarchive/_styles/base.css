@@ -2,8 +2,7 @@
 
 :root {
   /* font family */
-  /* stylelint-disable-next-line value-keyword-case */
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace; /* stylelint-disable-line value-keyword-case */
 
   /* color */
   --gray-100: 236 239 244;

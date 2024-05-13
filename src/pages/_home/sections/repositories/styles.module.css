@@ -51,7 +51,7 @@
 .separator {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .separatorIcon {
@@ -62,7 +62,7 @@
 .main {
   display: grid;
   gap: 3rem;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 @media (min-width: 768px) {

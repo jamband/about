@@ -1,3 +1,9 @@
 .container {
   border-bottom: 5px solid rgb(var(--rose-500) / 70%);
+  color: rgb(var(--gray-400) / 80%);
+  display: flex;
+  font-size: 0.925rem;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 1rem;
 }

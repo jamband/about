@@ -12,7 +12,7 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 768px;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1rem 1rem;
 }
 
 .title {
@@ -40,6 +40,6 @@
 
 .copyright {
   color: rgb(var(--gray-400) / 80%);
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
+  font-size: 0.925rem;
+  margin-top: 1rem;
 }

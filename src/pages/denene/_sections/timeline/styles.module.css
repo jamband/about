@@ -51,6 +51,7 @@
   align-self: flex-start;
   font-family: var(--font-mono);
   font-size: 0.975rem;
+  line-height: 1.3;
   padding: 0.25rem 0.75rem;
   text-align: center;
   width: 80px;

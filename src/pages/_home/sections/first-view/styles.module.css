@@ -27,13 +27,10 @@
 }
 
 .title {
-  align-items: center;
   color: rgb(var(--gray-100));
-  display: flex;
   font-size: 3rem;
   font-weight: bold;
   gap: 0.5rem;
-  justify-content: center;
   line-height: 1;
 }
 
@@ -43,10 +40,27 @@
   }
 }
 
-.titlePrefix {
-  color: rgb(var(--sky-500));
-  font-size: 2rem;
-  font-weight: 900;
+.titleDecoration {
+  display: inline-flex;
+  gap: 0.5rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.titleDecoration::before {
+  background: rgb(var(--sky-500));
+  content: "";
+  height: 1.5rem;
+  transform: rotate(20deg);
+  width: 0.25rem;
+}
+
+.titleDecoration::after {
+  background: rgb(var(--sky-500));
+  content: "";
+  height: 1.5rem;
+  transform: rotate(20deg);
+  width: 0.25rem;
 }
 
 .description {

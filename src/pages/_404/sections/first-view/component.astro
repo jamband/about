@@ -5,7 +5,10 @@ import styles from "./styles.module.css";
 ---
 
 <div class={styles.container}>
-  <h1 class={styles.title}>Not Found</h1>
+  <h1 class={styles.title}>
+    <div class={styles.titleDecoration} aria-hidden="true"></div>
+    Not Found
+  </h1>
   <p class={styles.description}>
     このページはすでに削除されているか、もしくはページが存在しません
   </p>

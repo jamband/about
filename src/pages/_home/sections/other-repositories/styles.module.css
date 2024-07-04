@@ -107,9 +107,9 @@
 }
 
 .mainLinkIcon {
-  color: rgb(var(--sky-500));
-  height: 0.85rem;
-  width: 0.85rem;
+  color: rgb(var(--sky-500) / 75%);
+  height: 1rem;
+  width: 1rem;
 }
 
 .mainDescription {

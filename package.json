@@ -22,5 +22,11 @@
     "stylelint-order": "6.0.4",
     "the-new-css-reset": "1.11.3",
     "typescript": "5.7.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }

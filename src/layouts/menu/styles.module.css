@@ -10,14 +10,15 @@
   padding: 1rem;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (any-hover: hover) {
   .button:hover {
     background: rgb(var(--menu-button-background));
     color: rgb(var(--menu-button-color));
   }
 }
 
-.button:active {
+.button:active,
+.button:focus-visible {
   background: rgb(var(--menu-button-background));
   color: rgb(var(--menu-button-color));
 }
@@ -83,14 +84,15 @@
   padding: 0.5rem 2.25rem;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (any-hover: hover) {
   .link:hover {
     background: rgb(var(--menu-offcanvas-background-light));
     color: rgb(var(--menu-offcanvas-color-light));
   }
 }
 
-.link:active {
+.link:active,
+.link:focus-visible {
   background: rgb(var(--menu-offcanvas-background-light));
   color: rgb(var(--menu-offcanvas-color-light));
 }

@@ -95,14 +95,15 @@
   padding: 0.75rem 1.25rem;
 }
 
-.link:active {
-  background: rgb(var(--gray-400) / 15%);
-}
-
-@media (hover: hover) and (pointer: fine) {
+@media (any-hover: hover) {
   .link:hover {
     background: rgb(var(--gray-400) / 15%);
   }
+}
+
+.link:active,
+.link:focus-visible {
+  background: rgb(var(--gray-400) / 15%);
 }
 
 .screenshotContainer {

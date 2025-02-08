@@ -161,14 +161,15 @@
   padding: 0.5rem 1rem;
 }
 
-.footerLink:active {
-  background: rgb(var(--gray-400) / 15%);
-}
-
-@media (hover: hover) and (pointer: fine) {
+@media (any-hover: hover) {
   .footerLink:hover {
     background: rgb(var(--gray-400) / 15%);
   }
+}
+
+.footerLink:active,
+.footerLink:focus-visible {
+  background: rgb(var(--gray-400) / 15%);
 }
 
 .footerLinkIcon {

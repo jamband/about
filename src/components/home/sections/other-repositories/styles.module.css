@@ -100,10 +100,15 @@
   gap: 0.5rem;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (any-hover: hover) {
   .mainLink:hover {
     color: rgb(var(--sky-500));
   }
+}
+
+.mainLink:active,
+.mainLink:focus-visible {
+  color: rgb(var(--sky-500));
 }
 
 .mainLinkIcon {
@@ -140,16 +145,17 @@
   padding: 0.5rem 1.25rem;
 }
 
-.footerLink:active {
-  background: rgb(var(--sky-500) / 30%);
-  border: 2px solid rgb(var(--sky-500) / 50%);
-}
-
-@media (hover: hover) and (pointer: fine) {
+@media (any-hover: hover) {
   .footerLink:hover {
     background: rgb(var(--sky-500) / 30%);
     border: 2px solid rgb(var(--sky-500) / 50%);
   }
+}
+
+.footerLink:active,
+.footerLink:focus-visible {
+  background: rgb(var(--sky-500) / 30%);
+  border: 2px solid rgb(var(--sky-500) / 50%);
 }
 
 .footerLinkIcon {

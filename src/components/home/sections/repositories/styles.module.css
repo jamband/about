@@ -100,10 +100,15 @@
   gap: 0.5rem;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (any-hover: hover) {
   .mainLink:hover {
     color: rgb(var(--sky-500));
   }
+}
+
+.mainLink:active,
+.mainLink:focus-visible {
+  color: rgb(var(--sky-500));
 }
 
 .mainLinkIcon {

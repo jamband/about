@@ -81,7 +81,7 @@
   background: rgb(var(--purple-500));
   content: "";
   height: 1.5rem;
-  transform: rotate(20deg);
+  rotate: 20deg;
   width: 0.25rem;
 }
 
@@ -89,7 +89,7 @@
   background: rgb(var(--purple-500));
   content: "";
   height: 1.5rem;
-  transform: rotate(20deg);
+  rotate: 20deg;
   width: 0.25rem;
 }
 

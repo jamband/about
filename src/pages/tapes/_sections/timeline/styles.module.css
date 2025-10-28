@@ -38,7 +38,7 @@
   background: rgb(var(--purple-500));
   content: "";
   height: 1.25rem;
-  transform: rotate(20deg);
+  rotate: 20deg;
   width: 0.25rem;
 }
 
@@ -46,7 +46,7 @@
   background: rgb(var(--purple-500));
   content: "";
   height: 1.25rem;
-  transform: rotate(20deg);
+  rotate: 20deg;
   width: 0.25rem;
 }
 
@@ -84,7 +84,7 @@
   height: 0.75rem;
   inset: 0;
   position: absolute;
-  transform: translate(-322%, 78%);
+  translate: -322% 78%;
   width: 0.75rem;
 }
 

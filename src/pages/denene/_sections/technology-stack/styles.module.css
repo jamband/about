@@ -51,7 +51,7 @@
   background: rgb(var(--pink-300));
   content: "";
   height: 1.25rem;
-  transform: rotate(20deg);
+  rotate: 20deg;
   width: 0.25rem;
 }
 
@@ -59,7 +59,7 @@
   background: rgb(var(--pink-300));
   content: "";
   height: 1.25rem;
-  transform: rotate(20deg);
+  rotate: 20deg;
   width: 0.25rem;
 }
 

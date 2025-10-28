@@ -69,8 +69,8 @@
 }
 
 .separatorIcon {
-  height: 1.75rem;
-  width: 1.75rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .main {
@@ -113,8 +113,8 @@
 
 .mainLinkIcon {
   color: rgb(var(--sky-500));
-  height: 1rem;
-  width: 1rem;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 .mainDescription {

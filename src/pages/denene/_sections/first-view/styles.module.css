@@ -11,25 +11,25 @@
   padding: 2rem 1rem 3rem;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .containerInner {
     padding: 3rem 1rem 6rem;
   }
 }
 
-@media (width >= 1024px) {
+@media (width >= 64rem) {
   .containerInner {
     flex-flow: row;
     margin: 0 auto;
-    max-width: 1096px;
+    max-width: 68.5rem;
     padding: 6rem 1rem 11rem;
   }
 }
 
-@media (width >= 1536px) {
+@media (width >= 96rem) {
   .containerInner {
     gap: 5rem;
-    max-width: 1296px;
+    max-width: 81rem;
     padding: 7rem 1rem 16rem;
   }
 }
@@ -41,7 +41,7 @@
   text-align: center;
 }
 
-@media (width >= 1024px) {
+@media (width >= 64rem) {
   .main {
     flex: 1;
   }
@@ -113,13 +113,13 @@
   position: relative;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .screenshotContainer {
     margin: 0 12rem;
   }
 }
 
-@media (width >= 1024px) {
+@media (width >= 64rem) {
   .screenshotContainer {
     flex: 1;
     margin: 0 5rem;

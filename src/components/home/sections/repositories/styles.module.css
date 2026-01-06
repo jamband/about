@@ -4,7 +4,7 @@
 
 .containerInner {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 64rem;
   padding: 6rem 1rem;
 }
 
@@ -50,13 +50,13 @@
   line-height: 1.85;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .headerDescription {
     padding: 0 5rem;
   }
 }
 
-@media (width >= 1024px) {
+@media (width >= 64rem) {
   .headerDescription {
     padding: 0 10rem;
   }
@@ -79,7 +79,7 @@
   margin-top: 3.5rem;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .main {
     gap: 4rem 3rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));

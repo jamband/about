@@ -41,7 +41,7 @@
   transition: 0.3s;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .offcanvasContainer {
     width: 25rem;
   }

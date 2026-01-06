@@ -9,18 +9,18 @@
   gap: 1rem;
   justify-content: center;
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 48rem;
   padding: 6rem 1rem 7rem;
   text-align: center;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .containerInner {
     padding: 16rem 1rem 19rem;
   }
 }
 
-@media (width >= 1280px) {
+@media (width >= 80rem) {
   .containerInner {
     padding: 18rem 1rem 20rem;
   }
@@ -34,7 +34,7 @@
   line-height: 1;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .title {
     font-size: 3.5rem;
   }
@@ -68,7 +68,7 @@
   margin-top: 1rem;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .description {
     padding: 0 2rem;
   }

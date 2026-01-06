@@ -6,16 +6,16 @@
   padding: 6rem 1rem;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .containerInner {
     margin: 0 auto;
-    max-width: 768px;
+    max-width: 48rem;
   }
 }
 
-@media (width >= 1024px) {
+@media (width >= 64rem) {
   .containerInner {
-    max-width: 1024px;
+    max-width: 64rem;
   }
 }
 
@@ -33,7 +33,7 @@
   line-height: 1.2;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .headerTitleNewLine {
     display: none;
   }
@@ -67,13 +67,13 @@
   line-height: 1.85;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .headerDescription {
     padding: 0 2rem;
   }
 }
 
-@media (width >= 1024px) {
+@media (width >= 64rem) {
   .headerDescription {
     padding: 0 8rem;
   }
@@ -96,7 +96,7 @@
   margin-top: 3.5rem;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .main {
     gap: 4rem 3rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -133,7 +133,7 @@
   flex-flow: column;
   justify-content: center;
   margin: 5rem auto 0;
-  max-width: 768px;
+  max-width: 48rem;
   text-align: center;
 }
 
@@ -141,7 +141,7 @@
   line-height: 1.85;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .footerDescription {
     padding: 0 4rem;
   }
@@ -154,7 +154,7 @@
   margin-top: 2rem;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
   .footerLinkList {
     flex-flow: row;
   }

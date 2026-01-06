@@ -6,14 +6,14 @@
   padding: 6rem 1rem;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .containerInner {
     margin: 0 auto;
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .containerInner {
     max-width: 1024px;
   }

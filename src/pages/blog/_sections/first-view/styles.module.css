@@ -11,13 +11,13 @@
   padding: 2rem 1rem 4rem;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .containerInner {
     padding: 4rem 1rem 8rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .containerInner {
     flex-flow: row;
     gap: 5rem;
@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: 1536px) {
+@media (width >= 1536px) {
   .containerInner {
     max-width: 1420px;
     padding: 10rem 1rem 16rem;
@@ -41,7 +41,7 @@
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .main {
     flex: 1;
   }
@@ -54,7 +54,7 @@
   line-height: 1.2;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .mainTitle {
     font-size: 3rem;
   }
@@ -118,13 +118,13 @@
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .screenshotContainer {
     margin: 0 10rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .screenshotContainer {
     flex: 1;
     margin: 0 2rem;

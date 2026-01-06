@@ -11,13 +11,13 @@
   padding: 2rem 1rem 3rem;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .containerInner {
     padding: 3rem 1rem 6rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .containerInner {
     flex-flow: row;
     margin: 0 auto;
@@ -26,7 +26,7 @@
   }
 }
 
-@media (min-width: 1536px) {
+@media (width >= 1536px) {
   .containerInner {
     gap: 5rem;
     max-width: 1296px;
@@ -41,7 +41,7 @@
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .main {
     flex: 1;
   }
@@ -113,13 +113,13 @@
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .screenshotContainer {
     margin: 0 12rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .screenshotContainer {
     flex: 1;
     margin: 0 5rem;

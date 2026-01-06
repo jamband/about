@@ -50,13 +50,13 @@
   line-height: 1.85;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .headerDescription {
     padding: 0 5rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .headerDescription {
     padding: 0 10rem;
   }
@@ -79,7 +79,7 @@
   margin-top: 3.5rem;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .main {
     gap: 4rem 3rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));

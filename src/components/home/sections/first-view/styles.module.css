@@ -14,13 +14,13 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .containerInner {
     padding: 16rem 1rem 19rem;
   }
 }
 
-@media (min-width: 1280px) {
+@media (width >= 1280px) {
   .containerInner {
     padding: 18rem 1rem 20rem;
   }
@@ -34,7 +34,7 @@
   line-height: 1;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .title {
     font-size: 3.5rem;
   }
@@ -68,7 +68,7 @@
   margin-top: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .description {
     padding: 0 2rem;
   }

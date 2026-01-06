@@ -13,13 +13,13 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.6",
-    "astro": "5.16.4",
+    "astro": "5.16.6",
     "prettier": "3.7.4",
     "prettier-plugin-astro": "0.14.1",
     "sharp": "0.34.5",
     "stylelint": "16.26.1",
     "stylelint-config-standard": "39.0.1",
-    "stylelint-order": "7.0.0",
+    "stylelint-order": "7.0.1",
     "the-new-css-reset": "1.11.3",
     "typescript": "5.9.3"
   }

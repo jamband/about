@@ -4,17 +4,13 @@
 
 .containerInner {
   padding: 6rem 1rem;
-}
 
-@media (width >= 48rem) {
-  .containerInner {
+  @media (width >= 48rem) {
     margin: 0 auto;
     max-width: 48rem;
   }
-}
 
-@media (width >= 64rem) {
-  .containerInner {
+  @media (width >= 64rem) {
     max-width: 64rem;
   }
 }
@@ -33,8 +29,8 @@
   line-height: 1.2;
 }
 
-@media (width >= 48rem) {
-  .headerTitleNewLine {
+.headerTitleNewLine {
+  @media (width >= 48rem) {
     display: none;
   }
 }
@@ -45,36 +41,32 @@
   height: 1.75rem;
   margin: 0 0.25rem 0 0;
   vertical-align: middle;
-}
 
-.headerTitleDecoration::before {
-  background: rgb(var(--rose-500));
-  content: "";
-  height: 1.25rem;
-  rotate: 20deg;
-  width: 0.25rem;
-}
+  &::before {
+    background: rgb(var(--rose-500));
+    content: "";
+    height: 1.25rem;
+    rotate: 20deg;
+    width: 0.25rem;
+  }
 
-.headerTitleDecoration::after {
-  background: rgb(var(--rose-500));
-  content: "";
-  height: 1.25rem;
-  rotate: 20deg;
-  width: 0.25rem;
+  &::after {
+    background: rgb(var(--rose-500));
+    content: "";
+    height: 1.25rem;
+    rotate: 20deg;
+    width: 0.25rem;
+  }
 }
 
 .headerDescription {
   line-height: 1.85;
-}
 
-@media (width >= 48rem) {
-  .headerDescription {
+  @media (width >= 48rem) {
     padding: 0 2rem;
   }
-}
 
-@media (width >= 64rem) {
-  .headerDescription {
+  @media (width >= 64rem) {
     padding: 0 8rem;
   }
 }
@@ -94,10 +86,8 @@
   display: grid;
   gap: 4rem;
   margin-top: 3.5rem;
-}
 
-@media (width >= 48rem) {
-  .main {
+  @media (width >= 48rem) {
     gap: 4rem 3rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -139,10 +129,8 @@
 
 .footerDescription {
   line-height: 1.85;
-}
 
-@media (width >= 48rem) {
-  .footerDescription {
+  @media (width >= 48rem) {
     padding: 0 4rem;
   }
 }
@@ -152,10 +140,8 @@
   flex-flow: column;
   gap: 1.5rem;
   margin-top: 2rem;
-}
 
-@media (width >= 48rem) {
-  .footerLinkList {
+  @media (width >= 48rem) {
     flex-flow: row;
   }
 }
@@ -172,17 +158,17 @@
   gap: 0.3rem;
   justify-content: center;
   padding: 0.75rem 1.25rem;
-}
 
-@media (any-hover: hover) {
-  .footerLinkListItem:hover {
+  @media (any-hover: hover) {
+    &:hover {
+      background: rgb(var(--gray-400) / 15%);
+    }
+  }
+
+  &:active,
+  &:focus-visible {
     background: rgb(var(--gray-400) / 15%);
   }
-}
-
-.footerLinkListItem:active,
-.footerLinkListItem:focus-visible {
-  background: rgb(var(--gray-400) / 15%);
 }
 
 .footerLinkIcon {

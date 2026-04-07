@@ -22,10 +22,6 @@ img {
   vertical-align: middle;
 }
 
-html:has(dialog[open]) {
-  overflow: hidden;
-}
-
 dialog {
   background: none;
   border: none;
@@ -33,6 +29,10 @@ dialog {
   max-width: none;
   overflow: visible;
   padding: 0;
+}
+
+:root:has(:modal) {
+  overflow: hidden;
 }
 
 :focus {

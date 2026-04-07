@@ -9,33 +9,25 @@
   gap: 3rem;
   justify-content: center;
   padding: 3rem 1rem 4rem;
-}
 
-@media (width >= 48rem) {
-  .containerInner {
+  @media (width >= 48rem) {
     padding: 5rem 1rem;
   }
-}
 
-@media (width >= 64rem) {
-  .containerInner {
+  @media (width >= 64rem) {
     flex-flow: row;
     gap: 2rem;
     margin: 0 auto;
     max-width: 64rem;
     padding: 12rem 5rem 14rem;
   }
-}
 
-@media (width >= 80rem) {
-  .containerInner {
+  @media (width >= 80rem) {
     max-width: 80rem;
     padding: 7rem 2rem 12rem;
   }
-}
 
-@media (width >= 96rem) {
-  .containerInner {
+  @media (width >= 96rem) {
     max-width: 96rem;
     padding: 9rem 4rem 16rem;
   }
@@ -46,10 +38,8 @@
   flex-flow: column;
   gap: 1rem;
   text-align: center;
-}
 
-@media (width >= 64rem) {
-  .main {
+  @media (width >= 64rem) {
     flex: 1;
   }
 }
@@ -59,10 +49,8 @@
   font-size: 2.75rem;
   font-weight: bold;
   line-height: 1.2;
-}
 
-@media (width >= 48rem) {
-  .mainTitle {
+  @media (width >= 48rem) {
     font-size: 3rem;
   }
 }
@@ -73,22 +61,22 @@
   height: 1.75rem;
   margin: 0 0.25rem 0 0;
   vertical-align: middle;
-}
 
-.mainTitleDecoration::before {
-  background: rgb(var(--rose-500));
-  content: "";
-  height: 1.5rem;
-  rotate: 20deg;
-  width: 0.25rem;
-}
+  &::before {
+    background: rgb(var(--rose-500));
+    content: "";
+    height: 1.5rem;
+    rotate: 20deg;
+    width: 0.25rem;
+  }
 
-.mainTitleDecoration::after {
-  background: rgb(var(--rose-500));
-  content: "";
-  height: 1.5rem;
-  rotate: 20deg;
-  width: 0.25rem;
+  &::after {
+    background: rgb(var(--rose-500));
+    content: "";
+    height: 1.5rem;
+    rotate: 20deg;
+    width: 0.25rem;
+  }
 }
 
 .mainDescription {
@@ -111,16 +99,12 @@
   justify-content: center;
   margin: 0 2rem;
   position: relative;
-}
 
-@media (width >= 48rem) {
-  .screenshotContainer {
+  @media (width >= 48rem) {
     margin: 0 8rem;
   }
-}
 
-@media (width >= 64rem) {
-  .screenshotContainer {
+  @media (width >= 64rem) {
     flex: 1;
     margin: 0 2rem;
   }

@@ -28,36 +28,32 @@
   height: 1.75rem;
   margin: 0 0.25rem 0 0;
   vertical-align: middle;
-}
 
-.headerTitleDecoration::before {
-  background: rgb(var(--sky-500));
-  content: "";
-  height: 1.25rem;
-  rotate: 20deg;
-  width: 0.25rem;
-}
+  &::before {
+    background: rgb(var(--sky-500));
+    content: "";
+    height: 1.25rem;
+    rotate: 20deg;
+    width: 0.25rem;
+  }
 
-.headerTitleDecoration::after {
-  background: rgb(var(--sky-500));
-  content: "";
-  height: 1.25rem;
-  rotate: 20deg;
-  width: 0.25rem;
+  &::after {
+    background: rgb(var(--sky-500));
+    content: "";
+    height: 1.25rem;
+    rotate: 20deg;
+    width: 0.25rem;
+  }
 }
 
 .headerDescription {
   line-height: 1.85;
-}
 
-@media (width >= 48rem) {
-  .headerDescription {
+  @media (width >= 48rem) {
     padding: 0 5rem;
   }
-}
 
-@media (width >= 64rem) {
-  .headerDescription {
+  @media (width >= 64rem) {
     padding: 0 10rem;
   }
 }
@@ -77,10 +73,8 @@
   display: grid;
   gap: 3rem;
   margin-top: 3.5rem;
-}
 
-@media (width >= 48rem) {
-  .main {
+  @media (width >= 48rem) {
     gap: 4rem 3rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 0 2rem;
@@ -98,17 +92,17 @@
   align-items: center;
   display: inline-flex;
   gap: 0.5rem;
-}
 
-@media (any-hover: hover) {
-  .mainLink:hover {
+  @media (any-hover: hover) {
+    &:hover {
+      color: rgb(var(--sky-500));
+    }
+  }
+
+  &:active,
+  &:focus-visible {
     color: rgb(var(--sky-500));
   }
-}
-
-.mainLink:active,
-.mainLink:focus-visible {
-  color: rgb(var(--sky-500));
 }
 
 .mainLinkIcon {
@@ -143,19 +137,19 @@
   gap: 0.4rem;
   margin-top: 1rem;
   padding: 0.5rem 1.25rem;
-}
 
-@media (any-hover: hover) {
-  .footerLink:hover {
+  @media (any-hover: hover) {
+    &:hover {
+      background: rgb(var(--sky-500) / 30%);
+      border: 2px solid rgb(var(--sky-500) / 50%);
+    }
+  }
+
+  &:active,
+  &:focus-visible {
     background: rgb(var(--sky-500) / 30%);
     border: 2px solid rgb(var(--sky-500) / 50%);
   }
-}
-
-.footerLink:active,
-.footerLink:focus-visible {
-  background: rgb(var(--sky-500) / 30%);
-  border: 2px solid rgb(var(--sky-500) / 50%);
 }
 
 .footerLinkIcon {

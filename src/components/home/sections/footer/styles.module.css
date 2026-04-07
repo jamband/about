@@ -25,10 +25,8 @@
 .list {
   display: flex;
   gap: 1rem;
-}
 
-@media (width >= 48rem) {
-  .list {
+  @media (width >= 48rem) {
     gap: 1.5rem;
   }
 }

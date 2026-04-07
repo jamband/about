@@ -12,16 +12,12 @@
   max-width: 48rem;
   padding: 6rem 1rem 7rem;
   text-align: center;
-}
 
-@media (width >= 48rem) {
-  .containerInner {
+  @media (width >= 48rem) {
     padding: 16rem 1rem 19rem;
   }
-}
 
-@media (width >= 80rem) {
-  .containerInner {
+  @media (width >= 80rem) {
     padding: 18rem 1rem 20rem;
   }
 }
@@ -32,10 +28,8 @@
   font-weight: bold;
   gap: 0.5rem;
   line-height: 1;
-}
 
-@media (width >= 48rem) {
-  .title {
+  @media (width >= 48rem) {
     font-size: 3.5rem;
   }
 }
@@ -45,31 +39,29 @@
   gap: 0.5rem;
   height: 2rem;
   vertical-align: middle;
-}
 
-.titleDecoration::before {
-  background: rgb(var(--sky-500));
-  content: "";
-  height: 1.5rem;
-  rotate: 20deg;
-  width: 0.25rem;
-}
+  &::before {
+    background: rgb(var(--sky-500));
+    content: "";
+    height: 1.5rem;
+    rotate: 20deg;
+    width: 0.25rem;
+  }
 
-.titleDecoration::after {
-  background: rgb(var(--sky-500));
-  content: "";
-  height: 1.5rem;
-  rotate: 20deg;
-  width: 0.25rem;
+  &::after {
+    background: rgb(var(--sky-500));
+    content: "";
+    height: 1.5rem;
+    rotate: 20deg;
+    width: 0.25rem;
+  }
 }
 
 .description {
   line-height: 1.85;
   margin-top: 1rem;
-}
 
-@media (width >= 48rem) {
-  .description {
+  @media (width >= 48rem) {
     padding: 0 2rem;
   }
 }
@@ -84,19 +76,19 @@
   display: inline-flex;
   margin-top: 3rem;
   padding: 1rem;
-}
 
-@media (any-hover: hover) {
-  .link:hover {
+  @media (any-hover: hover) {
+    &:hover {
+      background: rgb(var(--sky-500) / 20%);
+      border: 1px solid rgb(var(--sky-500) / 30%);
+    }
+  }
+
+  &:active,
+  &:focus-visible {
     background: rgb(var(--sky-500) / 20%);
     border: 1px solid rgb(var(--sky-500) / 30%);
   }
-}
-
-.link:active,
-.link:focus-visible {
-  background: rgb(var(--sky-500) / 20%);
-  border: 1px solid rgb(var(--sky-500) / 30%);
 }
 
 .linkIcon {

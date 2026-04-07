@@ -9,34 +9,26 @@
   gap: 3rem;
   justify-content: center;
   padding: 1rem 1rem 3rem;
-}
 
-@media (width >= 48rem) {
-  .containerInner {
+  @media (width >= 48rem) {
     padding: 3rem 1rem 5rem;
   }
-}
 
-@media (width >= 64rem) {
-  .containerInner {
+  @media (width >= 64rem) {
     flex-flow: row;
     gap: 1rem;
     margin: 0 auto;
     max-width: 64rem;
     padding: 4rem 1rem 8rem;
   }
-}
 
-@media (width >= 80rem) {
-  .containerInner {
+  @media (width >= 80rem) {
     gap: 4rem;
     max-width: 65.5rem;
     padding: 8rem 1rem 12rem;
   }
-}
 
-@media (width >= 96rem) {
-  .containerInner {
+  @media (width >= 96rem) {
     gap: 3rem;
     max-width: 80rem;
     padding: 8rem 0 15rem;
@@ -48,10 +40,8 @@
   flex-flow: column;
   gap: 1rem;
   text-align: center;
-}
 
-@media (width >= 64rem) {
-  .main {
+  @media (width >= 64rem) {
     flex: 1;
   }
 }
@@ -61,10 +51,8 @@
   font-size: 2.75rem;
   font-weight: bold;
   line-height: 1.2;
-}
 
-@media (width >= 48rem) {
-  .mainTitle {
+  @media (width >= 48rem) {
     font-size: 3rem;
   }
 }
@@ -75,22 +63,22 @@
   height: 1.75rem;
   margin: 0 0.25rem 0 0;
   vertical-align: middle;
-}
 
-.mainTitleDecoration::before {
-  background: rgb(var(--purple-500));
-  content: "";
-  height: 1.5rem;
-  rotate: 20deg;
-  width: 0.25rem;
-}
+  &::before {
+    background: rgb(var(--purple-500));
+    content: "";
+    height: 1.5rem;
+    rotate: 20deg;
+    width: 0.25rem;
+  }
 
-.mainTitleDecoration::after {
-  background: rgb(var(--purple-500));
-  content: "";
-  height: 1.5rem;
-  rotate: 20deg;
-  width: 0.25rem;
+  &::after {
+    background: rgb(var(--purple-500));
+    content: "";
+    height: 1.5rem;
+    rotate: 20deg;
+    width: 0.25rem;
+  }
 }
 
 .mainDescription {
@@ -113,16 +101,12 @@
   justify-content: center;
   margin: 0 2rem;
   position: relative;
-}
 
-@media (width >= 48rem) {
-  .screenshotContainer {
+  @media (width >= 48rem) {
     margin: 0 10rem;
   }
-}
 
-@media (width >= 64rem) {
-  .screenshotContainer {
+  @media (width >= 64rem) {
     flex: 1;
     margin: 0 2rem;
   }

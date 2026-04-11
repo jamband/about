@@ -4,13 +4,12 @@
 @import url("the-new-css-reset");
 
 html {
-  line-height: 1.5;
   scrollbar-gutter: stable;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
-  line-height: inherit;
+  line-height: 1.5;
 }
 
 button {

@@ -16,8 +16,7 @@
     }
   }
 
-  &:active,
-  &:focus-visible {
+  &:is(:active, :focus-visible) {
     background: rgb(var(--menu-button-background));
     color: rgb(var(--menu-button-color));
   }
@@ -88,8 +87,7 @@
     }
   }
 
-  &:active,
-  &:focus-visible {
+  &:is(:active, :focus-visible) {
     background: rgb(var(--menu-offcanvas-background-light));
     color: rgb(var(--menu-offcanvas-color-light));
   }

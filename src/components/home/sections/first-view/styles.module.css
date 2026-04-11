@@ -84,8 +84,7 @@
     }
   }
 
-  &:active,
-  &:focus-visible {
+  &:is(:active, :focus-visible) {
     background: rgb(var(--sky-500) / 20%);
     border: 1px solid rgb(var(--sky-500) / 30%);
   }

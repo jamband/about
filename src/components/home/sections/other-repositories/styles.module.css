@@ -99,8 +99,7 @@
     }
   }
 
-  &:active,
-  &:focus-visible {
+  &:is(:active, :focus-visible) {
     color: rgb(var(--sky-500));
   }
 }
@@ -145,8 +144,7 @@
     }
   }
 
-  &:active,
-  &:focus-visible {
+  &:is(:active, :focus-visible) {
     background: rgb(var(--sky-500) / 30%);
     border: 2px solid rgb(var(--sky-500) / 50%);
   }

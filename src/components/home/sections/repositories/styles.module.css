@@ -18,7 +18,6 @@
 .headerTitle {
   color: rgb(var(--gray-100));
   font-size: 2.5rem;
-  font-weight: bold;
   line-height: 1.2;
 }
 
@@ -84,7 +83,6 @@
 .mainName {
   color: rgb(var(--gray-100));
   font-size: 2rem;
-  font-weight: bold;
   line-height: 1.2;
 }
 

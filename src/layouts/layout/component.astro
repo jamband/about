@@ -1,4 +1,5 @@
 ---
+import { Font } from "astro:assets";
 import { APP_DESCRIPTION, APP_NAME } from "@/constants";
 
 type Props = {
@@ -23,6 +24,8 @@ const _description = description ?? APP_DESCRIPTION;
     <meta name="og:description" content={_description} />
     <title>{_title}</title>
     <link rel="icon" href="/about/favicon.ico" />
+    <Font cssVariable="--font-ubuntu" preload />
+    <Font cssVariable="--font-ubuntu-mono" preload />
   </head>
   <body>
     <slot />

@@ -1,6 +1,9 @@
 @import url("/src/styles/base.css");
 
 :root {
+  /* font family */
+  --font-sans: var(--font-ubuntu);
+
   /* color */
   --gray-100: 236 239 244;
   --gray-400: 183 180 199;
@@ -22,6 +25,6 @@
 body {
   background: rgb(var(--gray-800));
   color: rgb(var(--gray-400));
-  font-family: system-ui, Meiryo, Arial, sans-serif;
+  font-family: var(--font-sans);
   font-size: 1.15rem;
 }

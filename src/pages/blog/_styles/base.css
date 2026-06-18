@@ -2,8 +2,8 @@
 
 :root {
   /* font family */
-  /* stylelint-disable-next-line value-keyword-case */
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-sans: var(--font-ubuntu);
+  --font-mono: var(--font-ubuntu-mono);
 
   /* color */
   --gray-100: 236 239 244;
@@ -27,6 +27,6 @@
 body {
   background: rgb(var(--gray-800));
   color: rgb(var(--gray-400));
-  font-family: system-ui, Meiryo, Arial, sans-serif;
+  font-family: var(--font-sans);
   font-size: 1.15rem;
 }

@@ -25,7 +25,6 @@
 .title {
   color: rgb(var(--gray-100));
   font-size: 3rem;
-  font-weight: bold;
   gap: 0.5rem;
   line-height: 1;
 

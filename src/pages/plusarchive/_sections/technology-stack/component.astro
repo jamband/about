@@ -9,7 +9,10 @@ import styles from "./styles.module.css";
     <section class={styles.header}>
       <h2 class={styles.headerTitle}>
         <div class={styles.headerTitleDecoration} aria-hidden="true"></div>
-        Technology<br class={styles.headerTitleNewLine} aria-hidden="true" />
+        {" "}
+        Technology
+        {" "}
+        <br class={styles.headerTitleNewLine} aria-hidden="true" />
         Stack
       </h2>
       <p class={styles.headerDescription}>
@@ -76,15 +79,19 @@ import styles from "./styles.module.css";
           class={styles.footerLinkListItem}
           target="_blank"
           rel="noreferrer"
-          ><IconGitHub class={styles.footerLinkIcon} />Backend</a
         >
+          <IconGitHub class={styles.footerLinkIcon} />
+          Backend
+        </a>
         <a
           href="https://github.com/jamband/plusarchive.com"
           class={styles.footerLinkListItem}
           target="_blank"
           rel="noreferrer"
-          ><IconGitHub class={styles.footerLinkIcon} />Frontend</a
         >
+          <IconGitHub class={styles.footerLinkIcon} />
+          Frontend
+        </a>
       </div>
     </section>
   </article>

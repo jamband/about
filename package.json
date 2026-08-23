@@ -12,9 +12,9 @@
     "clean": "node scripts/clean.js"
   },
   "dependencies": {
-    "@astrojs/check": "0.9.9",
-    "astro": "7.1.1",
-    "prettier": "3.9.5",
+    "@astrojs/check": "0.9.10",
+    "astro": "7.2.4",
+    "prettier": "3.9.6",
     "prettier-plugin-astro": "0.14.1",
     "sharp": "0.35.3",
     "stylelint": "17.14.1",
